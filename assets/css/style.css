@@ -1,2 +1,4 @@
-
-/*MEDIA QUERY PARA MPBILE*/
+body{
+    font-family: 'Chakra Petch', sans-serif; /* Aplicando Chakra Petch */
+    font-weight: 600;
+}
