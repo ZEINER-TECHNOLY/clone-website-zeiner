@@ -4,28 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./src/output.css">
     <title>ZEINER | Inovacao e Solucoes</title>
 </head>
 
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <img src="./assets/img/logo.png" alt="logo-zeiner">
-            </div>
-            <nav class="menu">
-                <ul class="list-items">
-                    <li>Serviços</li>
-                    <li>Softwares</li>
-                    <li>Cursos</li>
-                    <li>Videos</li>
-                    <li>Quem Somos?</li>
-                    <li>Login</li>
+<body class="bg-sky-950">
+    <div>
+        <header>
+
+            <nav class="bg-white shadow-md px-4 py-3 flex items-center justify-between h-30">
+                <div class="w-20">
+                    <img src="./assets/img/logo.png" alt="logo-zeiner">
+                </div>
+
+                <div class="md:hidden">
+                    <span>ZE</span><span>I</span><span>NER</span>
+                </div>
+
+                <button class="w-20 md:hidden focus:outline-none" id="menu-toggle">
+                    <img src="./assets/img/main-menu.png" alt="">
+                </button>
+
+                <ul class="md:flex hidden space-x-6 text-grey-700 font-medium" id="nav-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Softwares</a></li>
+                    <li><a href="">Cursos</a></li>
+                    <li><a href="">Videos</a></li>
+                    <li><a href="">Quem Somos?</a></li>
+                    <li><a href="">Login</a></li>
                 </ul>
             </nav>
+
+            <div class="text-[20px] p-4 hidden md:hidden flex flex-col items-center justify-center bg-black text-white shadow-md text-lg border-4 border-sky-700"
+                id="mobile-menu">
+
+                <ul class="w-full">
+                    <li class="border-b-1 border-gray-400 py-8"><a href="">Home</a></li>
+                    <li class="border-b-1 border-gray-400 py-8"><a href="">Serviços</a></li>
+                    <li class="border-b-1 border-gray-400 py-8"><a href="" class="block">Softwares</a></li>
+                    <li class="border-b-1 border-gray-400 py-8"><a href="">Cursos</a></li>
+                    <li class="border-b-1 border-gray-400 py-8"><a href="">Videos</a></li>
+                    <li class="border-b-1 border-gray-400 py-8"><a href="">Quem Somos?</a></li>
+                    <li class="border-b-1 border-gray-400 py-8"><a href="">Login</a></li>
+                </ul>
+            </div>
+
         </header>
+
         <section>
             <div>
                 <div>
@@ -403,7 +430,7 @@
                         <div></div>
                     </div>
                     <div>
-                        
+
                     </div>
                 </div>
             </section>
@@ -416,7 +443,7 @@
         </footer>
     </div>
 
-
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
