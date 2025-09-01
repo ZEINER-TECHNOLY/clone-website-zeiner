@@ -17,9 +17,8 @@ menuToggle.addEventListener('click', (event) => {
 
 })
 
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
 const carousel = document.getElementById('carousel');
+let startX = 0;
 let currentIndex = 0;
 const totalSlides = carousel.children.length;
 
@@ -28,13 +27,28 @@ function goToSlide(index) {
     carousel.style.transform = `translateX(${offset}%)`;
 }
 
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    goToSlide(currentIndex);
+// Detecta o início do toque
+carousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;  // Pega a posição inicial do toque
 });
 
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    goToSlide(currentIndex);
+// Detecta o movimento do toque
+carousel.addEventListener('touchmove', (e) => {
+    e.preventDefault();  // Evita o comportamento padrão de rolagem
 });
 
+// Detecta o fim do toque
+carousel.addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;  // Pega a posição final do toque
+    const distance = startX - endX;  // Calcula a distância do deslize
+
+    if (distance > 50) {
+        // Deslizou para a esquerda (Próximo)
+        currentIndex = (currentIndex + 1) % totalSlides;
+    } else if (distance < -50) {
+        // Deslizou para a direita (Anterior)
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    }
+
+    goToSlide(currentIndex);
+});
