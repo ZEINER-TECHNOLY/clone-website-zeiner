@@ -11,9 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <title>ZEINER | Inovacao e Solucoes</title>
 </head>
@@ -75,7 +74,7 @@
                         Inovação & Soluções </span>
                 </div>
                 <div class="flex flex-col justify-center items-center py-8">
-                    <p class="text-lg">
+                    <p class="text-base">
                         Acreditamos que ao capacitar indivíduos de todas as origens, podemos construir um futuro mais
                         inclusivo para todos. Esperamos por si nessa missão!. Inspiramos inovação e promovemos a
                         igualdade.
@@ -157,7 +156,7 @@
                         Videos</h2>
                 </div>
                 <div class="border-0 rounded-2xl border-blue-400 p-4 flex flex-col justify-center items-center">
-                    <p class="text-lg">
+                    <p class="text-base">
                         Neste vídeo emocionante, exploramos as soluções revolucionárias previstas para inovar o cenário
                         tecnológico. Com as Soluções avançada tens um ritmo sem precedentes, e as suas possibilidades
                         são ilimitadas, a ZEINER esta aqui para trazer a você o mais abrangentes sobre o futuro das
@@ -171,15 +170,17 @@
                             class="w-full rounded-t-2xl"></iframe>
                     </div>
                     <div
-                        class="flex flex-col justify-center items-center border-0 w-full py-6 bg-neutral-900 p-4 rounded-b-2xl">
+                        class="flex flex-col justify-center items-center border-0 w-full py-6 bg-neutral-950 p-4 rounded-b-2xl">
                         <span>01.</span>
-                        <p>Os conteúdos usados nesse vídeo são inspiradora. Use-os para o bem</p>
+                        <p class="text-base">Os conteúdos usados nesse vídeo são inspiradora. Use-os para o bem</p>
 
                         <span>02.</span>
-                        <p>Para ver mais conteúdos como esses basta se inscrever no nossa plataforma clique aqui</p>
+                        <p class="text-base">Para ver mais conteúdos como esses basta se inscrever no nossa plataforma
+                            clique aqui</p>
 
                         <span>03.</span>
-                        <p>Esse conteúdo é meramente educacional, foi criado com a intenção de ajudar você a melhorar
+                        <p class="text-base">Esse conteúdo é meramente educacional, foi criado com a intenção de ajudar
+                            você a melhorar
                             suas habilidades!</p>
                     </div>
                 </div>
@@ -192,7 +193,8 @@
                         Cursos</h2>
                 </div>
                 <div class="m-4">
-                    <p>Clique em "Mais Cursos" e explore oportunidades de aprendizado que expandem seus limites. Do
+                    <p class="text-base">Clique em "Mais Cursos" e explore oportunidades de aprendizado que expandem
+                        seus limites. Do
                         básico da programação à segurança cibernética, nossos cursos atendem iniciantes e avançados,
                         ajudando a aprimorar suas habilidades para os desafios reais. Comece agora!</p>
                 </div>
@@ -202,8 +204,8 @@
                 <div class="overflow-x-auto relative">
                     <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
 
-                        <div class="w-full flex-shrink-0 justify-center items-center">
-                            <div class="flex flex-col justify-center items-center ">
+                        <div class="w-full flex-shrink-0 justify-center items-center border-2 border-red-950">
+                            <div class="flex flex-col justify-center items-center py-6 p-4 border-2 border-red-950">
 
                                 <div class="w-20 h-20">
                                     <img src="./assets/img/informatica.png" alt="">
@@ -212,115 +214,204 @@
                                     <h2>Informática Profissional</h2>
                                 </div>
                                 <div>
-                                    <p>
-                                        Explore informática profissional: domine ferramentas, desenvolva habilidades e
-                                        otimize
-                                        processos para o sucesso digital.
-                                    </p>
+                                    <p>Explore informática profissional: domine ferramentas, desenvolva habilidades e otimize processos para o sucesso digital.</p>
+                                </div>
+                                <div class="border-0 w-full py-2 gap-4">
+                                    <div class="my-6">
+                                        <a href="">
+                                            <button
+                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                iniciar
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <button
+                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                Mais Cursos
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="w-full flex-shrink-0 justify-center items-center">
+                            <div class="flex flex-col justify-center items-center py-6 p-4 border-2 border-red-950">
+
+                                <div class="w-20 h-20">
+                                    <img src="./assets/img/sistema.png" alt="">
                                 </div>
                                 <div>
-                                    <div><a href=""><button>iniciar</button></a></div>
-                                    <div><a href=""><button>Mais Cursos</button></a></div>
+                                    <h2>Sistemas Operacionais</h2>
+                                </div>
+                                <div>
+                                    <p>Explore sistemas operacionais: controle o funcionamento de computadore e dispositivos, gerenciando recursos e garantindo eficiência operacional.</p>
+                                </div>
+                                <div class="border-0 w-full py-2 gap-4">
+                                    <div class="my-2">
+                                        <a href="">
+                                            <button
+                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                iniciar
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <button
+                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                Mais Cursos
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="w-full flex-shrink-0 justify-center items-center border-2">
+                            <div class="flex flex-col justify-center items-center border-2 border-blue-950">
+
+                                <div class="w-20 h-20">
+                                    <img src="./assets/img/ciberseguranca.png" alt="">
+                                </div>
+                                <div>
+                                    <h2>Cyber Segurança</h2>
+                                </div>
+                                <div>
+                                    <p>
+                                        Descubra cibersegurança: proteja dados, redes e sistemas contra ameaças digitais
+                                        com
+                                        estratégias avançadas.
+                                    </p>
+                                </div>
+                                <div class="border-2 w-full py-2 ">
+                                    <div class="my-6">
+                                        <a href="">
+                                            <button
+                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                iniciar
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <button
+                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                Mais Cursos
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="w-full flex-shrink-0 justify-center items-center border-2 py-6 p-4 border-amber-700">
+                            <div class="w-full flex flex-col justify-center items-center border-2 border-blue-950">
+
+                                <div class="w-20 h-20">
+                                    <img src="./assets/img/itPro.png" alt="">
+                                </div>
+                                <div>
+                                    <h2>IT Profissional</h2>
+                                </div>
+                                <div>
+                                    <p>
+                                        Desbrave a TI: gerencie sistemas, otimize operações e impulsione a inovação
+                                        tecnológica.
+                                    </p>
+                                </div>
+                                <div class="border-0 w-full py-2 gap-4">
+                                    <div class="my-6">
+                                        <a href="">
+                                            <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                iniciar
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Mais Cursos
+                                            </button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="w-full flex-shrink-0">
-                            <div class="w-20 h-20">
-                                <img src="./assets/img/sistema.png" alt="">
-                            </div>
-                            <div>
-                                <h2>Sistemas Operacionais</h2>
-                            </div>
-                            <div>
-                                <p>
-                                    Explore sistemas operacionais: controle o funcionamento de computadores e
-                                    dispositivos,
-                                    gerenciando recursos e garantindo eficiência operacional.
-                                </p>
-                            </div>
-                            <div>
-                                <div><a href=""><button>iniciar</button></a></div>
-                                <div><a href=""><button>Mais Cursos</button></a></div>
-                            </div>
-
                         </div>
 
-                        <div class="w-full flex-shrink-0">
-                            <div class="w-20 h-20">
-                                <img src="./assets/img/ciberseguranca.png" alt="">
-                            </div>
-                            <div>
-                                <h2>Cyber Segurança</h2>
-                            </div>
-                            <div>
-                                <p>
-                                    Descubra cibersegurança: proteja dados, redes e sistemas contra ameaças digitais com
-                                    estratégias avançadas.
-                                </p>
-                            </div>
-                            <div>
-                                <div><a href=""><button>iniciar</button></a></div>
-                                <div><a href=""><button>Mais Cursos</button></a></div>
-                            </div>
+                        <div class="w-full flex-shrink-0 justify-center items-center">
+                            <div class="flex flex-col justify-center items-center">
 
-                        </div>
-
-                        <div class="w-full flex-shrink-0">
-                            <div class="w-20 h-20">
-                                <img src="./assets/img/itPro.png" alt="">
-                            </div>
-                            <div>
-                                <h2>IT Profissional</h2>
-                            </div>
-                            <div>
-                                <p>
-                                    Desbrave a TI: gerencie sistemas, otimize operações e impulsione a inovação
-                                    tecnológica.
-                                </p>
-                            </div>
-                            <div>
-                                <div><a href=""><button>iniciar</button></a></div>
-                                <div><a href=""><button>Mais Cursos</button></a></div>
+                                <div class="w-20 h-20">
+                                    <img src="./assets/img/gestao.png" alt="">
+                                </div>
+                                <div>
+                                    <h2>Gestão de Direções Tecnológicas</h2>
+                                </div>
+                                <div>
+                                    <p>
+                                        Gestão de Tecnologia: otimize estratégias, promova inovação e conduza direções
+                                        tecnológicas com eficiência
+                                    </p>
+                                </div>
+                                <div class="border-0 w-full py-2 gap-4">
+                                    <div class="my-6">
+                                        <a href="">
+                                            <button
+                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                iniciar
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <button
+                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                Mais Cursos
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="w-full flex-shrink-0">
-                            <div class="w-20 h-20">
-                                <img src="./assets/img/gestao.png" alt="">
-                            </div>
-                            <div>
-                                <h2>Gestão de Direções Tecnológicas</h2>
-                            </div>
-                            <div>
-                                <p>
-                                    Gestão de Tecnologia: otimize estratégias, promova inovação e conduza direções
-                                    tecnológicas com eficiência
-                                </p>
-                            </div>
-                            <div>
-                                <div><a href=""><button>iniciar</button></a></div>
-                                <div><a href=""><button>Mais Cursos</button></a></div>
-                            </div>
-                        </div>
+                        <div class="w-full flex-shrink-0 justify-center items-center">
+                            <div class="flex flex-col justify-center items-center">
 
-                        <div class="w-full flex-shrink-0">
-                            <div class="w-20 h-20">
-                                <img src="./assets/img/ciberseguranca.png" alt="">
-                            </div>
-                            <div>
-                                <h2>Programação</h2>
-                            </div>
-                            <div>
-                                <p>
-                                    Explore programação: crie soluções digitais, desenvolva habilidades e resolva
-                                    problemas
-                                    com código.
-                                </p>
-                            </div>
-                            <div>
-                                <div><a href=""><button>iniciar</button></a></div>
-                                <div><a href=""><button>Mais Cursos</button></a></div>
+                                <div class="w-20 h-20">
+                                    <img src="./assets/img/ciberseguranca.png" alt="">
+                                </div>
+                                <div>
+                                    <h2>Programação</h2>
+                                </div>
+                                <div>
+                                    <p>
+                                        Explore programação: crie soluções digitais, desenvolva habilidades e resolva
+                                        problemas
+                                        com código.
+                                    </p>
+                                </div>
+                                <div class="border-0 w-full py-2 gap-4">
+                                    <div class="my-6">
+                                        <a href="">
+                                            <button
+                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                iniciar
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <button
+                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                                Mais Cursos
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
