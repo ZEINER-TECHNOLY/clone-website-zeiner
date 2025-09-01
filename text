@@ -1,0 +1,46 @@
+<div class="relative w-full max-w-2xl mx-auto">
+  <!-- Carrossel -->
+  <div class="overflow-hidden relative">
+    <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+      <div class="w-full flex-shrink-0">
+        <img src="https://via.placeholder.com/600x400?text=Imagem+1" alt="Imagem 1" class="w-full">
+      </div>
+      <div class="w-full flex-shrink-0">
+        <img src="https://via.placeholder.com/600x400?text=Imagem+2" alt="Imagem 2" class="w-full">
+      </div>
+      <div class="w-full flex-shrink-0">
+        <img src="https://via.placeholder.com/600x400?text=Imagem+3" alt="Imagem 3" class="w-full">
+      </div>
+    </div>
+    <!-- Botões de navegação -->
+    <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full">
+      &#8592;
+    </button>
+    <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full">
+      &#8594;
+    </button>
+  </div>
+</div>
+
+<script>
+  const prevButton = document.getElementById('prev');
+  const nextButton = document.getElementById('next');
+  const carousel = document.getElementById('carousel');
+  let currentIndex = 0;
+  const totalSlides = carousel.children.length;
+
+  function goToSlide(index) {
+    const offset = -index * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    goToSlide(currentIndex);
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    goToSlide(currentIndex);
+  });
+</script>
