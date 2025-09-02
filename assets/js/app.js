@@ -63,3 +63,20 @@ menuToggle.addEventListener('click', () => {
     openIcon.classList.toggle('hidden', !isHidden)
     closeIcon.classList.toggle('hidden', isHidden)
 })
+
+//escrevendo texto 
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "Inovação & Soluções";
+  const target = document.getElementById("typewriter");
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      target.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 190); // velocidade da digitação
+    }
+  }
+
+  type();
+});

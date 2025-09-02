@@ -27,8 +27,8 @@
             class="shadow-md py-4 flex items-center justify-between h-20 border-0 border-blue-400 mx-auto px-6 container">
             <div class="flex space-x-2 items-center">
                 <img src="./assets/img/logo.png" alt="logo-zeiner" class="h-10">
-                <div class="hidden">
-                    <span class="text-2xl font-bold">ZE<span class="text-brand-green">I</span>NER</span>
+                <div class="hidden lg:block">
+                    <span class="text-2xl font-bold">ZE<span class="text-black">I</span>NER</span>
                 </div>
             </div>
 
@@ -66,14 +66,25 @@
 
     </header>
 
-    <section class="flex flex-col justify-center items-center py-12 border-0 border-red-950 text-white bg-[#000000]">
-        <div class="md:w-1/2 space-y-6 px-6">
-            <h1 class="text-4xl font-extrabold">
-                ZE<span class="text-brand-red">I</span>NER |
-                <span class="bg-gradient-to-r from-[#FF0000] to-[#008000] bg-clip-text text-transparent">
-                    Inovação & Soluções
-                </span>
-            </h1>
+    <section
+        class="flex flex-col justify-center items-center lg:flex-row py-12 border-0 lg:px-12 border-red-950 text-white bg-[#000000]">
+        <div class="md:w-1/2 space-y-6 px-6 lg:flex lg:flex-col lg:justify-center lg:items-center">
+            <div class="flex flex-row justify-between items-center">
+
+                <div>
+
+                    <h1 class="text-4xl font-extrabold">
+                        ZE<span class="text-red-600">I</span>NER |
+
+                    </h1>
+                </div>
+                <div class="flex flex-row items-start justify-start">
+
+                    <span id="typewriter"
+                        class="lg:text-4xl font-extrabold border-0 lg:w-full typewriter-css bg-gradient-to-r from-[#FF0000] to-[#008000] bg-clip-text text-transparent">
+                    </span>
+                </div>
+            </div>
             <p class="text-lg text-brand-gray">
                 Acreditamos que ao capacitar indivíduos de todas as origens, podemos construir um futuro mais
                 inclusivo.
@@ -83,9 +94,11 @@
                 Criar uma conta
             </a>
         </div>
-        <div>
-            <img src="./assets/img/img1.png" alt="">
+        <div
+            class="fixed mx-auto overflow-hidden animate-floating hover:scale-110 transition-transform duration-300 shadow-lg">
+            <img src="./assets/img/img1.png" alt="Lupa" class="w-full h-full object-cover" />
         </div>
+
 
     </section>
     <main class="flex flex-col justify-center items-center text-white bg-neutral-900">
@@ -136,11 +149,11 @@
                 <iframe src="https://www.youtube.com/embed/Qxe07BWpkWk" frameborder="0"
                     class="w-full h-64 md:h-96"></iframe>
                 <div class="bg-neutral-950 p-6 space-y-4 text-sm">
-                    <p><span class="font-bold">01.</span> Os conteúdos usados nesse vídeo são inspiradores. Use-os para
+                    <p><span class="font-bold">1.</span> Os conteúdos usados nesse vídeo são inspiradores. Use-os para
                         o bem.</p>
-                    <p><span class="font-bold">02.</span> Para ver mais conteúdos como esses, inscreva-se na nossa
+                    <p><span class="font-bold">2.</span> Para ver mais conteúdos como esses, inscreva-se na nossa
                         plataforma.</p>
-                    <p><span class="font-bold">03.</span> Conteúdo educacional criado para ajudar você a melhorar suas
+                    <p><span class="font-bold">3.</span> Conteúdo educacional criado para ajudar você a melhorar suas
                         habilidades!</p>
                 </div>
             </div>
@@ -155,56 +168,107 @@
                     <div class="swiper-wrapper">
 
                         <!-- Slide 1 -->
-                        <div class="swiper-slide flex justify-center">
-                            <div class="flex-shrink-0 w-80 bg-black border border-primary rounded-2xl p-6 text-center">
+                        <div class="swiper-slide flex justify-center border-0">
+                            <div
+                                class="flex-shrink-0 w-80 bg-black border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
                                 <img src="https://www.iped.com.br/_upload/content/2023/12/08/informatica-chave-prosperar-mundo-digital.jpg"
                                     class="w-40 h-40 mx-auto mb-4 rounded-full" alt="" />
-                                <h3 class="text-xl font-semibold mb-2 text-white">Informática Profissional</h3>
+                                <h3 class="text-xl font-semibold mb-2 text-[#e63946]">Informática Profissional</h3>
                                 <p class="text-sm mb-4 text-white">
                                     Domine ferramentas, desenvolva habilidades e otimize processos para o sucesso
                                     digital.
                                 </p>
                                 <a href="#"
-                                    class="block w-full py-2 bg-[#ff0000] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
                                 <a href="#"
-                                    class="block w-full py-2 bg-[#ff0000] text-white rounded-lg hover:bg-red-800">Mais
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Mais
                                     Cursos</a>
                             </div>
                         </div>
+
+                        <!------------------------------------------------------------------------------>
 
                         <!-- Slide 2 -->
-                        <div class="swiper-slide flex justify-center">
-                            <div class="flex-shrink-0 w-80 bg-black border border-primary rounded-2xl p-6 text-center">
-                                <img src="./assets/img/informatica.png" class="w-40 h-40 mx-auto mb-4" alt="" />
-                                <h3 class="text-xl font-semibold mb-2 text-white">Informática Profissional</h3>
+                        <div class="swiper-slide flex justify-center border-0 min-h-[450px]">
+                            <div
+                                class="flex-shrink-0 w-80 bg-black border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                                <img src="./assets/img/sistema.png" class="w-40 h-40 mx-auto mb-4 rounded-full"
+                                    alt="" />
+                                <h3 class="text-xl font-semibold mb-2 text-[#e63946]">Sistemas Operacionais</h3>
                                 <p class="text-sm mb-4 text-white">
-                                    Domine ferramentas, desenvolva habilidades e otimize processos para o sucesso
-                                    digital.
+                                    controle o funcionamento de computadores e dispositivos, gerenciando recursos e
+                                    garantindo eficiência operacional.
                                 </p>
                                 <a href="#"
-                                    class="block w-full py-2 bg-[#ff0000] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
                                 <a href="#"
-                                    class="block w-full py-2 bg-[#ff0000] text-white rounded-lg hover:bg-red-800">Mais
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Mais
                                     Cursos</a>
                             </div>
                         </div>
 
+                        <!------------------------------------------------------------------------------>
+
                         <!-- Slide 3 -->
-                        <div class="swiper-slide flex justify-center">
-                            <div class="flex-shrink-0 w-80 bg-black border border-primary rounded-2xl p-6 text-center">
-                                <img src="./assets/img/informatica.png" class="w-40 h-40 mx-auto mb-4" alt="" />
-                                <h3 class="text-xl font-semibold mb-2 text-white">Informática Profissional</h3>
+                        <div class="swiper-slide flex justify-center border-0 min-h-[450px]">
+                            <div
+                                class="flex-shrink-0 w-80 bg-black border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                                <img src="./assets/img/ciberseguranca.png" class="w-40 h-40 mx-auto mb-4 rounded-full"
+                                    alt="" />
+                                <h3 class="text-xl font-semibold mb-2 text-[#e63946]">Cyber Segurança</h3>
                                 <p class="text-sm mb-4 text-white">
-                                    Domine ferramentas, desenvolva habilidades e otimize processos para o sucesso
-                                    digital.
+                                    Descubra cibersegurança: proteja dados, redes e sistemas contra ameaças digitais com
+                                    estratégias avançadas.
                                 </p>
                                 <a href="#"
-                                    class="block w-full py-2 bg-[#ff0000] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
                                 <a href="#"
-                                    class="block w-full py-2 bg-[#ff0000] text-white rounded-lg hover:bg-red-800">Mais
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Mais
                                     Cursos</a>
                             </div>
                         </div>
+
+                        <!------------------------------------------------------------------------------>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide flex justify-center border-0 min-h-[450px]">
+                            <div
+                                class="flex-shrink-0 w-80 bg-black border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                                <img src="./assets/img/itPro.png" class="w-40 h-40 mx-auto mb-4 rounded-full" alt="" />
+                                <h3 class="text-xl font-semibold mb-2 text-[#e63946]">IT Profissional</h3>
+                                <p class="text-sm mb-4 text-white">
+                                    Desbrave a TI: gerencie sistemas, otimize operações e impulsione a inovação
+                                    tecnológica.
+                                </p>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Mais
+                                    Cursos</a>
+                            </div>
+                        </div>
+
+                        <!------------------------------------------------------------------------------>
+
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide flex justify-center border-0 min-h-[450px]">
+                            <div
+                                class="flex-shrink-0 w-80 bg-black border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                                <img src="./assets/img/gestao.png" class="w-40 h-40 mx-auto mb-4 rounded-full" alt="" />
+                                <h3 class="text-xl font-semibold mb-2 text-[#e63946]">Gestão de Direções Tecnológicas
+                                </h3>
+                                <p class="text-sm mb-4 text-white">
+                                    Gestão de Tecnologia: otimize estratégias, promova inovação e conduza direções
+                                    tecnológicas com eficiência
+                                </p>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Mais
+                                    Cursos</a>
+                            </div>
+                        </div>
+
 
                     </div>
 
@@ -220,7 +284,9 @@
 
         <!-- Parceiros -->
         <section class="w-full py-16 container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">Parceiros</h2>
+            <h2
+                class="text-3xl font-bold mb-6 bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent ">
+                Parceiros</h2>
             <p class="max-w-xl mx-auto mb-8">
                 Conheça alguns dos nossos parceiros! Entidades que ajudam a levar inovação até você.
             </p>
@@ -253,7 +319,9 @@
         <!-- Serviços -->
         <section class="w-full py-16 bg-neutral-950">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold mb-6">Serviços</h2>
+                <h2
+                    class="text-3xl font-bold mb-6 bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent ">
+                    Serviços</h2>
                 <p class="max-w-2xl mx-auto mb-12">Oferecemos soluções inovadoras para transformar desafios em
                     oportunidades.</p>
                 <div class="grid gap-8 md:grid-cols-4">
@@ -275,7 +343,8 @@
 
         <!-- Quem Somos -->
         <section class="w-full py-16 container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">Quem Somos</h2>
+            <h2 class="text-3xl font-bold mb-6 bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent">
+                Quem Somos</h2>
             <p class="max-w-2xl mx-auto mb-6">Somos uma empresa de tecnologia e assessoria jurídica, fundada em 2013 em
                 Luanda. Focamos em softwares, sistemas críticos e soluções eletrônicas.</p>
             <p class="max-w-2xl mx-auto">Garantimos eficiência, serviços atualizados e suporte personalizado para ajudar
@@ -285,7 +354,9 @@
         <!-- Fale Conosco -->
         <section class="w-full py-16 bg-neutral-950">
             <div class="container mx-auto px-4 text-center">
-                <h3 class="text-2xl font-bold mb-6">Fale Conosco</h3>
+                <h3
+                    class="text-2xl font-bold mb-6 bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent">
+                    Fale Conosco</h3>
                 <form class="max-w-lg mx-auto space-y-4">
                     <input type="text" placeholder="Seu Nome"
                         class="w-full p-3 rounded bg-neutral-800 border border-neutral-600">
@@ -293,7 +364,7 @@
                         class="w-full p-3 rounded bg-neutral-800 border border-neutral-600">
                     <textarea placeholder="Sua Mensagem" rows="4"
                         class="w-full p-3 rounded bg-neutral-800 border border-neutral-600"></textarea>
-                    <button class="w-full py-3 bg-[#ff0000] text-white rounded-lg hover:bg-red-800">Enviar</button>
+                    <button class="w-full py-3 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Enviar</button>
                 </form>
             </div>
         </section>
@@ -327,10 +398,12 @@
                 <h3 class="text-lg font-semibold mb-2 text-blue-400">Contatos</h3>
                 <ul class="text-sm text-gray-400 flex flex-col gap-1">
                     <li class="space-x-2"><i
-                            class="fa-solid fa-location-dot hover:text-blue-400 text-xl text-white"></i>Centralidade do Kilamba
+                            class="fa-solid fa-location-dot hover:text-blue-400 text-xl text-white"></i>Centralidade do
+                        Kilamba
                         Bloco N Prédio
                         N-11 APTº 23 2º Andar</li>
-                    <li><i class="fa-solid fa-phone hover:text-blue-400 text-xl text-white"></i> +244 923 293 338 | +244 923 906 015
+                    <li><i class="fa-solid fa-phone hover:text-blue-400 text-xl text-white"></i> +244 923 293 338 | +244
+                        923 906 015
                     </li>
                     <li><i class="fa-solid fa-envelope hover:text-blue-400 text-xl text-white"></i> geral@zeiner.co.ao |
                         info@zeiner.co.ao | comercial@zeiner.co.ao</li>

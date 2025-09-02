@@ -1,3 +1,34 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+@keyframes typewriter {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #e63946; }
+}
+
+.typewriter-css {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #FF0000;
+  white-space: nowrap;
+  animation: typewriter 3s steps(20) 1 normal both,
+             blink 0.7s step-end infinite;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
