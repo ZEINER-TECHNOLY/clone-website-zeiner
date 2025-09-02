@@ -1,31 +1,40 @@
-import Swiper from "swiper"
-import "swiper/css"
-import { Navigation, Pagination } from 'swiper/modules';
 
 const swiper = new Swiper('.swiper', {
+    modules: [Swiper.Navigation, Swiper.Pagination], // se quiser, ou deixe sem
     loop: true,
-    autoplay: {delay: 3000},
-    pagination: {el: '.swiper-pagination'},
-    navigation: {nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev'}
-})
+    autoplay: {
+        delay: 3000,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
 
 
-
-//configurando o navbar para mobile
+// Mobile menu toggle
 const menuToggle = document.getElementById('menu-toggle')
 const mobileMenu = document.getElementById('mobile-menu')
 const closeIcon = document.getElementById('icon-close')
 const openIcon = document.getElementById('icon-open')
 
-menuToggle.addEventListener('click', (event) => {
-
+menuToggle.addEventListener('click', () => {
     const isHidden = mobileMenu.classList.toggle('hidden')
-    if (isHidden) {
-        openIcon.classList.remove('hidden')
-        closeIcon.classList.add('hidden')
-    } else {
-        openIcon.classList.add('hidden')
-        closeIcon.classList.remove('hidden')
-    }
-
+    openIcon.classList.toggle('hidden', !isHidden)
+    closeIcon.classList.toggle('hidden', isHidden)
 })
