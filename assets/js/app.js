@@ -1,3 +1,16 @@
+import Swiper from "swiper"
+import "swiper/css"
+import { Navigation, Pagination } from 'swiper/modules';
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {delay: 3000},
+    pagination: {el: '.swiper-pagination'},
+    navigation: {nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev'}
+})
+
+
+
 //configurando o navbar para mobile
 const menuToggle = document.getElementById('menu-toggle')
 const mobileMenu = document.getElementById('mobile-menu')
@@ -16,39 +29,3 @@ menuToggle.addEventListener('click', (event) => {
     }
 
 })
-
-const carousel = document.getElementById('carousel');
-let startX = 0;
-let currentIndex = 0;
-const totalSlides = carousel.children.length;
-
-function goToSlide(index) {
-    const offset = -index * 100;
-    carousel.style.transform = `translateX(${offset}%)`;
-}
-
-// Detecta o início do toque
-carousel.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;  // Pega a posição inicial do toque
-});
-
-// Detecta o movimento do toque
-carousel.addEventListener('touchmove', (e) => {
-    e.preventDefault();  // Evita o comportamento padrão de rolagem
-});
-
-// Detecta o fim do toque
-carousel.addEventListener('touchend', (e) => {
-    const endX = e.changedTouches[0].clientX;  // Pega a posição final do toque
-    const distance = startX - endX;  // Calcula a distância do deslize
-
-    if (distance > 50) {
-        // Deslizou para a esquerda (Próximo)
-        currentIndex = (currentIndex + 1) % totalSlides;
-    } else if (distance < -50) {
-        // Deslizou para a direita (Anterior)
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    }
-
-    goToSlide(currentIndex);
-});
