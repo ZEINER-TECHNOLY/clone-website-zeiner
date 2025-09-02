@@ -16,19 +16,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>ZEINER | Inovacao e Solucoes</title>
 </head>
-<!-- bg-gradient-to-r from-blue-950 to-black-->>
+<!-- bg-gradient-to-r from-blue-950 to-black-->
 
-<body class="bg-black">
-    <header>
+<body class="bg-[#F5F5F5] text-black">
+    <header class="border-0 border-green-900 text-white bg-[#FF0000]">
 
-        <nav class="bg-gradient-to-r from-black to-red-950 shadow-md px-4 py-3 flex items-center justify-between h-20">
-            <div class="w-12">
-                <img src="./assets/img/logo.png" alt="logo-zeiner">
-            </div>
-
-            <div class="md:hidden text-2xl">
-                <span class="text-white">ZE</span><span class="text-red-600 text-2xl">I</span><span
-                    class="text-white">NER</span>
+        <nav
+            class="shadow-md py-4 flex items-center justify-between h-20 border-0 border-blue-400 mx-auto px-6 container">
+            <div class="flex space-x-2 items-center">
+                <img src="./assets/img/logo.png" alt="logo-zeiner" class="h-10">
+                <div class="hidden">
+                    <span class="text-2xl font-bold">ZE<span class="text-brand-green">I</span>NER</span>
+                </div>
             </div>
 
             <button class="w-20 md:hidden focus:outline-none" id="menu-toggle">
@@ -64,516 +63,560 @@
         </div>
 
     </header>
-    <div class="container max-auto px-4 lg:px-8 border-0 border-red-950">
 
-        <section class="flex flex-col justify-center items-center py-12 border-0 text-white">
-            <div>
-                <div class="text-4xl">
-                    <span class="">ZE</span><span class="text-red-900 ">I</span><span>NER</span><span>|</span> <span
-                        class="bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent font-black font-octosquares">
-                        Inovação & Soluções </span>
+    <section class="flex flex-col justify-center items-center py-12 border-0 border-red-950 text-white bg-[#000000]">
+        <div class="md:w-1/2 space-y-6 px-6">
+            <h1 class="text-4xl font-extrabold">
+                ZE<span class="text-brand-red">I</span>NER |
+                <span class="bg-gradient-to-r from-[#FF0000] to-[#008000] bg-clip-text text-transparent">
+                    Inovação & Soluções
+                </span>
+            </h1>
+            <p class="text-lg text-brand-gray">
+                Acreditamos que ao capacitar indivíduos de todas as origens, podemos construir um futuro mais
+                inclusivo.
+            </p>
+            <a href="#"
+                class="inline-block bg-[#008000] text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
+                Criar uma conta
+            </a>
+        </div>
+        <div>
+            <img src="./assets/img/img1.png" alt="">
+        </div>
+
+    </section>
+    <main class="border-0 border-amber-300 flex flex-col justify-center items-center text-white">
+        <div class="w-full border-0 border-red-950 flex flex-col justify-center items-center">
+
+            <div
+                class="flex flex-col justify-center items-center w-full max-w-sm mx-auto bg-black rounded-2xl border-2 border-blue-400 my-4 shadow-[0_0_15px_2px_rgba(0,255,255,0.7)] gap-8 py-6">
+                <div class="w-20 h-20">
+                    <img src="./assets/img/visitas.png" alt="" class="">
                 </div>
-                <div class="flex flex-col justify-center items-center py-8">
-                    <p class="text-base">
-                        Acreditamos que ao capacitar indivíduos de todas as origens, podemos construir um futuro mais
-                        inclusivo para todos. Esperamos por si nessa missão!. Inspiramos inovação e promovemos a
-                        igualdade.
-                    </p>
-                    <span class="text-2xl mt-6">Junte-se a nós e seja o nosso parceiro.</span>
+                <div>
+                    <h6 class="text-2xl tex">Visitantes no site</h6>
                 </div>
-                <div class="flex flex-col justify-center items-center py-6">
-                    <a href="">
-                        <button class="py-4 px-20 border-2 border-amber-700 rounded-2xl bg-amber-950">Criar Uma
-                            Conta</button>
-                    </a>
+                <div>
+                    <p class="text-2xl">8.234</p>
                 </div>
             </div>
+
+            <div
+                class="flex flex-col justify-center items-center w-full max-w-sm mx-auto p-4 bg-black rounded-2xl border-2 border-blue-400 my-4 shadow-[0_0_15px_2px_rgba(0,255,255,0.7)] gap-8 py-6">
+                <div class="w-20 h-20">
+                    <img src="./assets/img/iconeProgramacao.png" alt="">
+                </div>
+                <div>
+                    <h6 class="text-2xl">Cursos</h6>
+                </div>
+                <div>
+                    <p class="text-2xl">56</p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col justify-center items-center w-full mx-w-sm mx-auto p-4 bg-black rounded-2xl border-2 border-blue-400 my-4 shadow-[0_0_15px_2px_rgba(0,255,255,0.7)] gap-8 py-6">
+                <div class="w-20 h-20">
+                    <img src="./assets/img/totAlunos.png" alt="">
+                </div>
+                <div>
+                    <h6 class="text-2xl">Alunos Inscritos</h6>
+                </div>
+                <div>
+                    <p class="text-2xl">2.780</p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col justify-center items-center w-full mx-w-sm mx-auto bg-black rounded-2xl shadow-[0_0_15px_2px_rgba(0,255,255,0.7)] border-2 border-blue-400 my-4 gap-8 py-6 p-4">
+                <div class="w-20 h-20">
+                    <img src="./assets/img/juridica.png" alt="">
+                </div>
+                <div>
+                    <h6 class="text-2xl">Assistências Jurídicas</h6>
+                </div>
+                <div>
+                    <p class="text-2xl">34</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="border-0 flex flex-col justify-center items-center border-red-950 py-8 gap-4">
+            <div class="w-full flex flex-col justify-center items-center border-b-2 border-amber-700 py-4 p-2">
+                <h2
+                    class="text-3xl bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent font-black font-octosquares">
+                    Videos</h2>
+            </div>
+            <div class="border-0 rounded-2xl border-blue-400 p-4 flex flex-col justify-center items-center">
+                <p class="text-base">
+                    Neste vídeo emocionante, exploramos as soluções revolucionárias previstas para inovar o cenário
+                    tecnológico. Com as Soluções avançada tens um ritmo sem precedentes, e as suas possibilidades
+                    são ilimitadas, a ZEINER esta aqui para trazer a você o mais abrangentes sobre o futuro das
+                    tecnologias.
+                </p>
+            </div>
+
+            <div class="border-0 border-amber-700 rounded-2xl shadow-20">
+                <div class="w-full">
+                    <iframe src="https://www.youtube.com/watch?v=Qxe07BWpkWk&t=3s" frameborder="0"
+                        class="w-full rounded-t-2xl"></iframe>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center border-0 w-full py-6 bg-neutral-950 p-4 rounded-b-2xl">
+                    <span>01.</span>
+                    <p class="text-base">Os conteúdos usados nesse vídeo são inspiradora. Use-os para o bem</p>
+
+                    <span>02.</span>
+                    <p class="text-base">Para ver mais conteúdos como esses basta se inscrever no nossa plataforma
+                        clique aqui</p>
+
+                    <span>03.</span>
+                    <p class="text-base">Esse conteúdo é meramente educacional, foi criado com a intenção de ajudar
+                        você a melhorar
+                        suas habilidades!</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="border-0 border-amber-700 shadow-md flex flex-col justify-center items-center w-full  bg-neutral-900 rounded-t-2xl mb-0">
+            <div class="w-full bg-neutral-950 rounded-t-2xl flex flex-col justify-center items-center p-2">
+                <h2 class="text-3xl bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent font-black">
+                    Cursos</h2>
+            </div>
+            <div class="m-4">
+                <p class="text-base">Explore cursos de programação e segurança cibernética, do básico ao avançado.
+                    Comece agora!</p>
+            </div>
+        </div>
+        <div class="bg-neutral-950 relative rounded-b-2xl w-full py-6 p-4">
+
+            <div class="overflow-x-auto relative">
+                <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+
+                    <div class="w-full flex-shrink-0 justify-center items-center border-2 border-red-950">
+                        <div class="flex flex-col justify-center items-center py-6 p-4 border-2 border-red-950">
+
+                            <div class="w-20 h-20">
+                                <img src="./assets/img/informatica.png" alt="">
+                            </div>
+                            <div>
+                                <h2>Informática Profissional</h2>
+                            </div>
+                            <div>
+                                <p>Explore informática profissional: domine ferramentas, desenvolva habilidades e
+                                    otimize processos para o sucesso digital.</p>
+                            </div>
+                            <div class="border-0 w-full py-2 gap-4">
+                                <div class="my-6">
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            iniciar
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            Mais Cursos
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="w-full flex-shrink-0 justify-center items-center">
+                        <div class="flex flex-col justify-center items-center py-6 p-4 border-2 border-red-950">
+
+                            <div class="w-20 h-20">
+                                <img src="./assets/img/sistema.png" alt="">
+                            </div>
+                            <div>
+                                <h2>Sistemas Operacionais</h2>
+                            </div>
+                            <div>
+                                <p>Explore sistemas operacionais: controle o funcionamento de computadore e
+                                    dispositivos, gerenciando recursos e garantindo eficiência operacional.</p>
+                            </div>
+                            <div class="border-0 w-full py-2 gap-4">
+                                <div class="my-2">
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            iniciar
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            Mais Cursos
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 justify-center items-center border-2">
+                        <div class="flex flex-col justify-center items-center border-2 border-blue-950">
+
+                            <div class="w-20 h-20">
+                                <img src="./assets/img/ciberseguranca.png" alt="">
+                            </div>
+                            <div>
+                                <h2>Cyber Segurança</h2>
+                            </div>
+                            <div>
+                                <p>
+                                    Descubra cibersegurança: proteja dados, redes e sistemas contra ameaças digitais
+                                    com
+                                    estratégias avançadas.
+                                </p>
+                            </div>
+                            <div class="border-2 w-full py-2 ">
+                                <div class="my-6">
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            iniciar
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            Mais Cursos
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 justify-center items-center border-2 py-6 p-4 border-amber-700">
+                        <div class="w-full flex flex-col justify-center items-center border-2 border-blue-950">
+
+                            <div class="w-20 h-20">
+                                <img src="./assets/img/itPro.png" alt="">
+                            </div>
+                            <div>
+                                <h2>IT Profissional</h2>
+                            </div>
+                            <div>
+                                <p>
+                                    Desbrave a TI: gerencie sistemas, otimize operações e impulsione a inovação
+                                    tecnológica.
+                                </p>
+                            </div>
+                            <div class="border-0 w-full py-2 gap-4">
+                                <div class="my-6">
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            iniciar
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Mais
+                                            Cursos
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 justify-center items-center">
+                        <div class="flex flex-col justify-center items-center">
+
+                            <div class="w-20 h-20">
+                                <img src="./assets/img/gestao.png" alt="">
+                            </div>
+                            <div>
+                                <h2>Gestão de Direções Tecnológicas</h2>
+                            </div>
+                            <div>
+                                <p>
+                                    Gestão de Tecnologia: otimize estratégias, promova inovação e conduza direções
+                                    tecnológicas com eficiência
+                                </p>
+                            </div>
+                            <div class="border-0 w-full py-2 gap-4">
+                                <div class="my-6">
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            iniciar
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            Mais Cursos
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 justify-center items-center">
+                        <div class="flex flex-col justify-center items-center">
+
+                            <div class="w-20 h-20">
+                                <img src="./assets/img/ciberseguranca.png" alt="">
+                            </div>
+                            <div>
+                                <h2>Programação</h2>
+                            </div>
+                            <div>
+                                <p>
+                                    Explore programação: crie soluções digitais, desenvolva habilidades e resolva
+                                    problemas
+                                    com código.
+                                </p>
+                            </div>
+                            <div class="border-0 w-full py-2 gap-4">
+                                <div class="my-6">
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            iniciar
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <button
+                                            class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                                            Mais Cursos
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botões de navegação -->
+            </div>
+
+        </div>
+
+        <section class="border-2 flex flex-col justify-center items-center">
+            <div class="w-20 h-20">
+                <img src="./assets/img/cursos.png" alt="">
+            </div>
             <div>
-                <img src="./assets/img/img1.png" alt="">
+                <h1>ZEINER</h1>
+                <small>
+                    =Inovação & Soluções=
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Parceiros</h2>
+            </div>
+            <div>
+                <p>Conheça alguns dos nossos parceiros! As entidades que têm ajudado você a ter acesso a esses
+                    conteúdos de qualidade e inovadores.</p>
+            </div>
+            <div>
+                <div><a href=""><img src="./assets/img/gov.png" alt=""></a></div>
+                <div><a href=""><img src="./assets/img/google.png" alt=""></a></div>
+                <div><a href=""><img src="./assets/img/dtser.png" alt=""></a></div>
+                <div><a href=""><img src="./assets/img/republica (1).png" alt=""></a></div>
+                <div><a href=""><img src="./assets/img/microsoft.png" alt=""></a></div>
             </div>
 
         </section>
-        <main class="border-0 border-amber-300 flex flex-col justify-center items-center text-white">
-            <div class="w-full border-0 border-red-950 flex flex-col justify-center items-center">
 
-                <div
-                    class="flex flex-col justify-center items-center w-full max-w-sm mx-auto bg-black rounded-2xl border-2 border-blue-400 my-4 shadow-[0_0_15px_2px_rgba(0,255,255,0.7)] gap-8 py-6">
-                    <div class="w-20 h-20">
-                        <img src="./assets/img/visitas.png" alt="" class="">
-                    </div>
-                    <div>
-                        <h6 class="text-2xl tex">Visitantes no site</h6>
-                    </div>
-                    <div>
-                        <p class="text-2xl">8.234</p>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-col justify-center items-center w-full max-w-sm mx-auto p-4 bg-black rounded-2xl border-2 border-blue-400 my-4 shadow-[0_0_15px_2px_rgba(0,255,255,0.7)] gap-8 py-6">
-                    <div class="w-20 h-20">
-                        <img src="./assets/img/iconeProgramacao.png" alt="">
-                    </div>
-                    <div>
-                        <h6 class="text-2xl">Cursos</h6>
-                    </div>
-                    <div>
-                        <p class="text-2xl">56</p>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-col justify-center items-center w-full mx-w-sm mx-auto p-4 bg-black rounded-2xl border-2 border-blue-400 my-4 shadow-[0_0_15px_2px_rgba(0,255,255,0.7)] gap-8 py-6">
-                    <div class="w-20 h-20">
-                        <img src="./assets/img/totAlunos.png" alt="">
-                    </div>
-                    <div>
-                        <h6 class="text-2xl">Alunos Inscritos</h6>
-                    </div>
-                    <div>
-                        <p class="text-2xl">2.780</p>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-col justify-center items-center w-full mx-w-sm mx-auto bg-black rounded-2xl shadow-[0_0_15px_2px_rgba(0,255,255,0.7)] border-2 border-blue-400 my-4 gap-8 py-6 p-4">
-                    <div class="w-20 h-20">
-                        <img src="./assets/img/juridica.png" alt="">
-                    </div>
-                    <div>
-                        <h6 class="text-2xl">Assistências Jurídicas</h6>
-                    </div>
-                    <div>
-                        <p class="text-2xl">34</p>
-                    </div>
-                </div>
+        <section>
+            <div>
+                <h2>Servicos</h2>
             </div>
-            <hr>
-            <div class="border-0 flex flex-col justify-center items-center border-red-950 py-8 gap-4">
-                <div class="w-full flex flex-col justify-center items-center border-b-2 border-amber-700 py-4 p-2">
-                    <h2
-                        class="text-3xl bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent font-black font-octosquares">
-                        Videos</h2>
-                </div>
-                <div class="border-0 rounded-2xl border-blue-400 p-4 flex flex-col justify-center items-center">
-                    <p class="text-base">
-                        Neste vídeo emocionante, exploramos as soluções revolucionárias previstas para inovar o cenário
-                        tecnológico. Com as Soluções avançada tens um ritmo sem precedentes, e as suas possibilidades
-                        são ilimitadas, a ZEINER esta aqui para trazer a você o mais abrangentes sobre o futuro das
-                        tecnologias.
-                    </p>
-                </div>
-
-                <div class="border-0 border-amber-700 rounded-2xl shadow-20">
-                    <div class="w-full">
-                        <iframe src="https://www.youtube.com/watch?v=Qxe07BWpkWk&t=3s" frameborder="0"
-                            class="w-full rounded-t-2xl"></iframe>
-                    </div>
-                    <div
-                        class="flex flex-col justify-center items-center border-0 w-full py-6 bg-neutral-950 p-4 rounded-b-2xl">
-                        <span>01.</span>
-                        <p class="text-base">Os conteúdos usados nesse vídeo são inspiradora. Use-os para o bem</p>
-
-                        <span>02.</span>
-                        <p class="text-base">Para ver mais conteúdos como esses basta se inscrever no nossa plataforma
-                            clique aqui</p>
-
-                        <span>03.</span>
-                        <p class="text-base">Esse conteúdo é meramente educacional, foi criado com a intenção de ajudar
-                            você a melhorar
-                            suas habilidades!</p>
-                    </div>
-                </div>
+            <div>
+                <p>Estamos comprometidos em oferecer soluções tecnológicas inovadoras que transformam desafios em
+                    oportunidades. Com uma equipe especializada desenvolvemos serviços que atendem às necessidades
+                    únicas de cada cliente. Nossa missão é fornecer as ferramentas e o suporte necessários para
+                    alcançar os seus objetivos em tecnologias!</p>
             </div>
-            <div
-                class="border-0 border-amber-700 shadow-20 flex flex-col justify-center items-center w-full  bg-neutral-900 rounded-t-2xl mb-0">
-                <div class="w-full bg-neutral-950 rounded-t-2xl flex flex-col justify-center items-center p-2">
-                    <h2
-                        class="text-3xl bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent font-black">
-                        Cursos</h2>
-                </div>
-                <div class="m-4">
-                    <p class="text-base">Explore cursos de programação e segurança cibernética, do básico ao avançado. Comece agora!</p>
-                </div>
-            </div>
-            <div class="bg-neutral-950 relative rounded-b-2xl w-full py-6 p-4">
-
-                <div class="overflow-x-auto relative">
-                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
-
-                        <div class="w-full flex-shrink-0 justify-center items-center border-2 border-red-950">
-                            <div class="flex flex-col justify-center items-center py-6 p-4 border-2 border-red-950">
-
-                                <div class="w-20 h-20">
-                                    <img src="./assets/img/informatica.png" alt="">
-                                </div>
-                                <div>
-                                    <h2>Informática Profissional</h2>
-                                </div>
-                                <div>
-                                    <p>Explore informática profissional: domine ferramentas, desenvolva habilidades e otimize processos para o sucesso digital.</p>
-                                </div>
-                                <div class="border-0 w-full py-2 gap-4">
-                                    <div class="my-6">
-                                        <a href="">
-                                            <button
-                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                iniciar
-                                            </button>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="">
-                                            <button
-                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                Mais Cursos
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="w-full flex-shrink-0 justify-center items-center">
-                            <div class="flex flex-col justify-center items-center py-6 p-4 border-2 border-red-950">
-
-                                <div class="w-20 h-20">
-                                    <img src="./assets/img/sistema.png" alt="">
-                                </div>
-                                <div>
-                                    <h2>Sistemas Operacionais</h2>
-                                </div>
-                                <div>
-                                    <p>Explore sistemas operacionais: controle o funcionamento de computadore e dispositivos, gerenciando recursos e garantindo eficiência operacional.</p>
-                                </div>
-                                <div class="border-0 w-full py-2 gap-4">
-                                    <div class="my-2">
-                                        <a href="">
-                                            <button
-                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                iniciar
-                                            </button>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="">
-                                            <button
-                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                Mais Cursos
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="w-full flex-shrink-0 justify-center items-center border-2">
-                            <div class="flex flex-col justify-center items-center border-2 border-blue-950">
-
-                                <div class="w-20 h-20">
-                                    <img src="./assets/img/ciberseguranca.png" alt="">
-                                </div>
-                                <div>
-                                    <h2>Cyber Segurança</h2>
-                                </div>
-                                <div>
-                                    <p>
-                                        Descubra cibersegurança: proteja dados, redes e sistemas contra ameaças digitais
-                                        com
-                                        estratégias avançadas.
-                                    </p>
-                                </div>
-                                <div class="border-2 w-full py-2 ">
-                                    <div class="my-6">
-                                        <a href="">
-                                            <button
-                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                iniciar
-                                            </button>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="">
-                                            <button
-                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                Mais Cursos
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="w-full flex-shrink-0 justify-center items-center border-2 py-6 p-4 border-amber-700">
-                            <div class="w-full flex flex-col justify-center items-center border-2 border-blue-950">
-
-                                <div class="w-20 h-20">
-                                    <img src="./assets/img/itPro.png" alt="">
-                                </div>
-                                <div>
-                                    <h2>IT Profissional</h2>
-                                </div>
-                                <div>
-                                    <p>
-                                        Desbrave a TI: gerencie sistemas, otimize operações e impulsione a inovação
-                                        tecnológica.
-                                    </p>
-                                </div>
-                                <div class="border-0 w-full py-2 gap-4">
-                                    <div class="my-6">
-                                        <a href="">
-                                            <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                iniciar
-                                            </button>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="">
-                                            <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Mais Cursos
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="w-full flex-shrink-0 justify-center items-center">
-                            <div class="flex flex-col justify-center items-center">
-
-                                <div class="w-20 h-20">
-                                    <img src="./assets/img/gestao.png" alt="">
-                                </div>
-                                <div>
-                                    <h2>Gestão de Direções Tecnológicas</h2>
-                                </div>
-                                <div>
-                                    <p>
-                                        Gestão de Tecnologia: otimize estratégias, promova inovação e conduza direções
-                                        tecnológicas com eficiência
-                                    </p>
-                                </div>
-                                <div class="border-0 w-full py-2 gap-4">
-                                    <div class="my-6">
-                                        <a href="">
-                                            <button
-                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                iniciar
-                                            </button>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="">
-                                            <button
-                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                Mais Cursos
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="w-full flex-shrink-0 justify-center items-center">
-                            <div class="flex flex-col justify-center items-center">
-
-                                <div class="w-20 h-20">
-                                    <img src="./assets/img/ciberseguranca.png" alt="">
-                                </div>
-                                <div>
-                                    <h2>Programação</h2>
-                                </div>
-                                <div>
-                                    <p>
-                                        Explore programação: crie soluções digitais, desenvolva habilidades e resolva
-                                        problemas
-                                        com código.
-                                    </p>
-                                </div>
-                                <div class="border-0 w-full py-2 gap-4">
-                                    <div class="my-6">
-                                        <a href="">
-                                            <button
-                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                iniciar
-                                            </button>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="">
-                                            <button
-                                                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
-                                                Mais Cursos
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./assets/img/dev.png" alt="">
+                        <h3>Desenvolvimento de Softwares</h3>
                     </div>
-                    <!-- Botões de navegação -->
+                    <div>
+                        <img src="./assets/img/auditoria.png" alt="">
+                        <h3>Auditoria e Consultoria de TI</h3>
+                    </div>
+                    <div>
+                        <img src="./assets/img/formacao.png" alt="">
+                        <h3>Formação Corporativa</h3>
+                    </div>
+                    <div>
+                        <img src="./assets/img/appMobile.png" alt="">
+                        <h3>Aplicativos mobile e websites</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="./assets/img/seguranca.png" alt="">
+                        <h3>Segurança de dados e Monitoramento</h3>
+                    </div>
+                    <div>
+                        <img src="./assets/img/rede.png" alt="">
+                        <h3>Infraestrutura de Redes</h3>
+                    </div>
+                    <div>
+                        <img src="./assets/img/solucoes.png" alt="">
+                        <h3>Electrónica</h3>
+                    </div>
+                    <div>
+                        <img src="./assets/img/hospedagem.png" alt="">
+                        <h3>Domínio e Hospedagem</h3>
+                    </div>
                 </div>
 
             </div>
+        </section>
 
-            <section class="border-2 flex flex-col justify-center items-center">
-                <div class="w-20 h-20">
-                    <img src="./assets/img/cursos.png" alt="">
+        <section>
+            <div>
+                <h2>
+                    Quem Somos?
+                </h2>
+                <h3>
+                    Sobre a <span>ZE</span><span>I</span><span>NER</span>
+                </h3>
+                <p>
+                    Somos uma Empresa de tecnológia e Acessoria Jurídica, sediada em Luanda, cidade capital de
+                    Angola,
+                    fundada 12 de Maio de 2013. A empresa foca-se em Desenvolvimento de Softwares, Soluções de
+                    Sistemas
+                    Critico e Sensores Electrónicos. Possui um histórico de conquistas com parcerias e projetos!
+                    Esperamos por si!
+                </p>
+            </div>
+            <div>
+                <h3>
+                    Porquê escolher a nós
+                </h3>
+                <p>
+                    Garantimos eficiência nos nossos serviços, nós disponibilizamos conhecimento de maneiras
+                    aprendizado
+                    jamais vistas. Capacitamos mentes e inspiramos gerações.
+                </p>
+            </div>
+            <div>
+                <h3>
+                    Nossos serviços
+                </h3>
+                <p>
+                    Os nossos serviços são eficazes, seguros, atualizados com investimentos flexíveis. Oferecemos
+                    serviços e mentorias organizacionais.
+                </p>
+            </div>
+            <div>
+                <h3>
+                    Como posso obter os vossos serviços?
+                </h3>
+                <p>
+                    Para obter os nossos serviços basta acessar a nossa plataforma e escrever-se ou ligar para a
+                    nossa
+                    linha de apoio. Você tambem poderá mandar uma Mensagem para nós clicando aqui e mencionar o
+                    objectivo, os nossos assistente irão responder de seguida
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h3>
+                    Fale Conosco
+                </h3>
+            </div>
+            <div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
                 <div>
-                    <h1>ZEINER</h1>
-                    <small>
-                        =Inovação & Soluções=
-                    </small>
-                </div>
-            </section>
-
-            <section>
-                <div>
-                    <h2>Parceiros</h2>
-                </div>
-                <div>
-                    <p>Conheça alguns dos nossos parceiros! As entidades que têm ajudado você a ter acesso a esses
-                        conteúdos de qualidade e inovadores.</p>
-                </div>
-                <div>
-                    <div><a href=""><img src="./assets/img/gov.png" alt=""></a></div>
-                    <div><a href=""><img src="./assets/img/google.png" alt=""></a></div>
-                    <div><a href=""><img src="./assets/img/dtser.png" alt=""></a></div>
-                    <div><a href=""><img src="./assets/img/republica (1).png" alt=""></a></div>
-                    <div><a href=""><img src="./assets/img/microsoft.png" alt=""></a></div>
-                </div>
-
-            </section>
-
-            <section>
-                <div>
-                    <h2>Servicos</h2>
-                </div>
-                <div>
-                    <p>Estamos comprometidos em oferecer soluções tecnológicas inovadoras que transformam desafios em
-                        oportunidades. Com uma equipe especializada desenvolvemos serviços que atendem às necessidades
-                        únicas de cada cliente. Nossa missão é fornecer as ferramentas e o suporte necessários para
-                        alcançar os seus objetivos em tecnologias!</p>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="./assets/img/dev.png" alt="">
-                            <h3>Desenvolvimento de Softwares</h3>
-                        </div>
-                        <div>
-                            <img src="./assets/img/auditoria.png" alt="">
-                            <h3>Auditoria e Consultoria de TI</h3>
-                        </div>
-                        <div>
-                            <img src="./assets/img/formacao.png" alt="">
-                            <h3>Formação Corporativa</h3>
-                        </div>
-                        <div>
-                            <img src="./assets/img/appMobile.png" alt="">
-                            <h3>Aplicativos mobile e websites</h3>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <img src="./assets/img/seguranca.png" alt="">
-                            <h3>Segurança de dados e Monitoramento</h3>
-                        </div>
-                        <div>
-                            <img src="./assets/img/rede.png" alt="">
-                            <h3>Infraestrutura de Redes</h3>
-                        </div>
-                        <div>
-                            <img src="./assets/img/solucoes.png" alt="">
-                            <h3>Electrónica</h3>
-                        </div>
-                        <div>
-                            <img src="./assets/img/hospedagem.png" alt="">
-                            <h3>Domínio e Hospedagem</h3>
-                        </div>
-                    </div>
 
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section>
-                <div>
-                    <h2>
-                        Quem Somos?
-                    </h2>
-                    <h3>
-                        Sobre a <span>ZE</span><span>I</span><span>NER</span>
-                    </h3>
-                    <p>
-                        Somos uma Empresa de tecnológia e Acessoria Jurídica, sediada em Luanda, cidade capital de
-                        Angola,
-                        fundada 12 de Maio de 2013. A empresa foca-se em Desenvolvimento de Softwares, Soluções de
-                        Sistemas
-                        Critico e Sensores Electrónicos. Possui um histórico de conquistas com parcerias e projetos!
-                        Esperamos por si!
-                    </p>
+    </main>
+
+    <footer class="bg-black text-white py-12 px-4 mt-16 border-t border-blue-500">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Coluna 1: Logo + nome -->
+            <div class="flex flex-col items-start gap-2">
+                <img src="./assets/img/logo.png" alt="Logo Zeiner" class="w-16 h-16">
+                <h2 class="text-xl font-bold">ZEINER</h2>
+                <p class="text-sm text-gray-400">Inovação & Soluções</p>
+            </div>
+
+            <!-- Coluna 2: Links Rápidos -->
+            <div>
+                <h3 class="text-lg font-semibold mb-2 text-blue-400">Links Rápidos</h3>
+                <ul class="text-sm flex flex-col gap-1">
+                    <li><a href="#cursos" class="hover:text-blue-400 transition">Cursos</a></li>
+                    <li><a href="#servicos" class="hover:text-blue-400 transition">Serviços</a></li>
+                    <li><a href="#videos" class="hover:text-blue-400 transition">Vídeos</a></li>
+                    <li><a href="#sobre" class="hover:text-blue-400 transition">Quem Somos</a></li>
+                    <li><a href="#contato" class="hover:text-blue-400 transition">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Contato -->
+            <div>
+                <h3 class="text-lg font-semibold mb-2 text-blue-400">Contato</h3>
+                <ul class="text-sm text-gray-400 flex flex-col gap-1">
+                    <li class="space-x-2"><i class="fa-solid fa-location-dot"></i>Centralidade do Kilamba Bloco N Prédio N-11 APTº 23 2º Andar</li>
+                    <li>📞 +244 +244 923 293 338 | +244 923 906 015</li>
+                    <li>📧 contato@zeiner.ao</li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Redes Sociais -->
+            <div>
+                <h3 class="text-lg font-semibold mb-2 text-blue-400">Redes Sociais</h3>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-blue-400 text-xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-blue-400 text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-blue-400 text-xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-blue-400 text-xl"><i class="fab fa-youtube"></i></a>
                 </div>
-                <div>
-                    <h3>
-                        Porquê escolher a nós
-                    </h3>
-                    <p>
-                        Garantimos eficiência nos nossos serviços, nós disponibilizamos conhecimento de maneiras
-                        aprendizado
-                        jamais vistas. Capacitamos mentes e inspiramos gerações.
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        Nossos serviços
-                    </h3>
-                    <p>
-                        Os nossos serviços são eficazes, seguros, atualizados com investimentos flexíveis. Oferecemos
-                        serviços e mentorias organizacionais.
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        Como posso obter os vossos serviços?
-                    </h3>
-                    <p>
-                        Para obter os nossos serviços basta acessar a nossa plataforma e escrever-se ou ligar para a
-                        nossa
-                        linha de apoio. Você tambem poderá mandar uma Mensagem para nós clicando aqui e mencionar o
-                        objectivo, os nossos assistente irão responder de seguida
-                    </p>
-                </div>
-            </section>
+            </div>
 
-            <section>
-                <div>
-                    <h3>
-                        Fale Conosco
-                    </h3>
-                </div>
-                <div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div>
+        </div>
 
-                    </div>
-                </div>
-            </section>
+        <div class="mt-10 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+            &copy; 2025 ZEINER. Todos os direitos reservados.
+        </div>
+    </footer>
 
-        </main>
-
-        <footer>
-
-
-        </footer>
-    </div>
 
     <script src="./assets/js/app.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
