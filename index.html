@@ -221,16 +221,33 @@
         <!-- Parceiros -->
         <section class="w-full py-16 container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Parceiros</h2>
-            <p class="max-w-xl mx-auto mb-8">Conheça alguns dos nossos parceiros! Entidades que ajudam a levar inovação
-                até você.</p>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center border-2">
-                <img src="./assets/img/gov.png" alt="" class="mx-auto h-12">
-                <img src="./assets/img/google.png" alt="" class="mx-auto h-12">
-                <img src="./assets/img/dtser.png" alt="" class="mx-auto h-12">
-                <img src="./assets/img/republica (1).png" alt="" class="mx-auto h-12">
-                <img src="./assets/img/microsoft.png" alt="" class="mx-auto h-12">
+            <p class="max-w-xl mx-auto mb-8">
+                Conheça alguns dos nossos parceiros! Entidades que ajudam a levar inovação até você.
+            </p>
+
+            <!-- Swiper Container -->
+            <div class="swiper partner-swiper">
+                <div class="swiper-wrapper items-center">
+                    <!-- Cada imagem é um slide -->
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img src="./assets/img/gov.png" alt="gov" class="h-12" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img src="./assets/img/google.png" alt="google" class="h-12" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img src="./assets/img/dtser.png" alt="dtser" class="h-12" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img src="./assets/img/republica (1).png" alt="republica" class="h-12" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img src="./assets/img/microsoft.png" alt="microsoft" class="h-12" />
+                    </div>
+                </div>
             </div>
         </section>
+
 
         <!-- Serviços -->
         <section class="w-full py-16 bg-neutral-950">
@@ -340,7 +357,7 @@
     </footer>
 
 
-    <script src="./assets/js/app.js" type="module"></script>
+    <script src="./assets/js/app.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </body>
 
