@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ZEINER | Inovação e Soluções</title>
+</head>
+<!-- bg-gradient-to-r from-blue-950 to-black-->
+
+<body class="bg-[#F5F5F5] text-black">
+    <!-- inicio do header-->
+    <header class="border-0 text-white bg-[#e63946]">
+        <nav class="shadow-md py-4 flex items-center justify-between h-20 px-6 container mx-auto">
+            <!-- Logo -->
+            <div class="flex space-x-2 items-center">
+                <img src="./assets/img/logo.png" alt="logo-zeiner" class="h-10">
+                <div class="lg:block">
+                    <span class="text-2xl font-bold">ZE<span class="text-black">I</span>NER</span>
+                </div>
+            </div>
+
+            <!-- Botão toggle (mobile + tablet) -->
+            <button class="w-10 h-10 flex items-center justify-center focus:outline-none lg:hidden" id="menu-toggle">
+                <i class="fa-solid fa-bars text-white text-2xl" id="icon-open"></i>
+                <i class="fa-solid fa-xmark text-white text-2xl hidden" id="icon-close"></i>
+            </button>
+
+            <!-- Menu -->
+            <ul id="nav-menu" class="lg:flex-row lg:justify-end hidden flex-col lg:flex lg:static lg:space-y-0 lg:space-x-6 md:mx-auto
+             absolute left-0 top-20 w-full bg-[#e63946] lg:bg-transparent shadow-md lg:shadow-none 
+             text-white font-medium z-50 px-6  py-4 lg:px-0 lg:py-0 
+             transition-all duration-300 ease-in-out transform origin-top scale-y-0 opacity-0 
+             lg:scale-y-100 lg:opacity-100">
+
+                <li><a href="#" class="block hover:text-gray-100">Home</a></li>
+                <li><a href="#" class="block hover:text-gray-100">Serviços</a></li>
+                <li><a href="#" class="block hover:text-gray-100">Softwares</a></li>
+                <li><a href="#" class="block hover:text-gray-100">Cursos</a></li>
+                <li><a href="#" class="block hover:text-gray-100">Vídeos</a></li>
+                <li><a href="#" class="block hover:text-gray-100">Quem Somos?</a></li>
+                <li><a href="#" class="block hover:text-gray-100">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="flex flex-col justify-center items-center lg:flex-row py-12 border-0 lg:px-12 border-red-950 text-white bg-[#000000]">
+        <div class="md:w-1/2 space-y-6  lg:flex lg:flex-col lg:justify-center lg:items-start border-0 px-4">
+            <div class="flex flex-row justify-between items-center border-0">
+
+                <div>
+
+                    <h1 class="text-3xl font-extrabold">
+                        ZE<span class="text-red-600">I</span>NER |
+
+                    </h1>
+                </div>
+                <div class="flex flex-row items-start justify-start border-0">
+                    <span id="typewriter"
+                        class=" lg:text-4xl font-extrabold border-r-4 py-0 lg:w-full typewriter-css text-[#e63946]">
+                    </span>
+                </div>
+            </div>
+            <p class="text-brand-gray  lg:font-thin">
+                Acreditamos que ao capacitar indivíduos de todas as origens, podemos construir um futuro mais
+                inclusivo.
+            </p>
+            <a href="#"
+                class="inline-block bg-[#008000] text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
+                Criar uma conta
+            </a>
+        </div>
+        <div
+            class=" mx-auto overflow-hidden animate-floating hover:scale-110 transition-transform duration-300 shadow-lg">
+
+            <img src="./assets/img/img1.png" alt="Lupa" class="w-full h-full object-cover" />
+        </div>
+
+    </section>
+    <main class="flex flex-col justify-center items-center text-white bg-neutral-900">
+
+        <!-- Estatísticas -->
+        <section class="w-full py-12 bg-neutral-950">
+            <div class="container mx-auto px-4 grid gap-6 md:grid-cols-4">
+
+                <!-- Card -->
+                <div
+                    class="flex flex-col items-center bg-black rounded-2xl border border-primary shadow-lg p-6 hover:bg-neutral-900 transition duration-300">
+                    <img src="./assets/img/visitas.png" alt="" class="w-20 h-20 mb-4">
+                    <h6 class="text-xl font-semibold">Visitantes</h6>
+                    <p class="text-2xl font-bold text-primary">8.234</p>
+                </div>
+
+                <div
+                    class="flex flex-col items-center bg-black rounded-2xl border border-primary shadow-lg p-6 hover:bg-neutral-900 transition duration-300">
+                    <img src="./assets/img/iconeProgramacao.png" alt="" class="w-20 h-20 mb-4">
+                    <h6 class="text-xl font-semibold">Cursos</h6>
+                    <p class="text-2xl font-bold text-primary">56</p>
+                </div>
+
+                <div
+                    class="flex flex-col items-center bg-black rounded-2xl border border-primary shadow-lg p-6 hover:bg-neutral-900 transition duration-300">
+                    <img src="./assets/img/totAlunos.png" alt="" class="w-20 h-20 mb-4">
+                    <h6 class="text-xl font-semibold">Alunos</h6>
+                    <p class="text-2xl font-bold text-primary">2.780</p>
+                </div>
+
+                <div
+                    class="flex flex-col items-center bg-black rounded-2xl border border-primary shadow-lg p-6 hover:bg-neutral-900 transition duration-300">
+                    <img src="./assets/img/juridica.png" alt="" class="w-20 h-20 mb-4">
+                    <h6 class="text-xl font-semibold">Assistências Jurídicas</h6>
+                    <p class="text-2xl font-bold text-primary">34</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vídeos -->
+        <section class="w-full py-16 lg:my-16 container  px-4 lg:px-auto border-0 lg:flex-col lg:justify-center lg:items-center">
+            <h2
+                class="text-3xl font-bold max-w-2xl mx-auto lg:py-12 text-start mb-4 border-0 bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent">
+                Vídeos</h2>
+
+            <p class="max-w-2xl mx-auto lg:py-12 text-start text-base mb-6 border-0">
+                Neste vídeo emocionante, exploramos as soluções revolucionárias previstas para inovar o cenário
+                tecnológico. A ZEINER está aqui para trazer a você o melhor sobre o futuro das tecnologias.
+            </p>
+
+            <div class="lg:w-full  mx-auto rounded-2xl overflow-hidden shadow-lg">
+                <iframe src="https://www.youtube.com/embed/Qxe07BWpkWk" frameborder="0"
+                    class="w-full h-64 md:h-96 lg:w-full " allowfullscreen></iframe>
+                <div class="bg-neutral-950 p-16 space-y-4 text-sm">
+                    <p><span class="font-bold">1.</span> Os conteúdos usados nesse vídeo são inspiradores. Use-os para
+                        o bem.</p>
+                    <p><span class="font-bold">2.</span> Para ver mais conteúdos como esses, inscreva-se na nossa
+                        plataforma.</p>
+                    <p><span class="font-bold">3.</span> Conteúdo educacional criado para ajudar você a melhorar suas
+                        habilidades!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cursos -->
+        <section class="w-full py-10 lg:py-32 bg-black border-0 border-green-700">
+            <div class="w-full lg:my-16 container  px-4 lg:px-auto border-0 lg:flex-col lg:justify-center lg:items-center">
+                <div class="mb-12 px-4 mt-12 border-0">
+                    <h2 class="text-3xl font-bold text-[#e63946] max-w-2xl mx-auto lg:py-12 text-start mb-4 border-0">
+                        Invista no seu futuro com nossos cursos
+                    </h2>
+                </div>
+                <div>
+                    <p class="text-gray-100 max-w-2xl mx-auto mb-6 border-0">
+                        Capacitações práticas e atualizadas para quem deseja evoluir na área de tecnologia. Aprenda no seu
+                        ritmo, com conteúdos que realmente fazem diferença na sua carreira.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full max-w-7xl mx-auto px-4 mt-20">
+                <!-- Swiper container -->
+                <div class="swiper">
+                    <!-- Wrapper -->
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide flex justify-center border-0">
+                            <div
+                                class="flex-shrink-0 w-80 bg-black border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                                <img src="https://www.iped.com.br/_upload/content/2023/12/08/informatica-chave-prosperar-mundo-digital.jpg"
+                                    class="w-40 h-40 mx-auto mb-4 rounded-full" alt="" />
+                                <h3 class="text-xl font-semibold mb-2 text-[#e63946]">Informática Profissional</h3>
+                                <p class="text-sm mb-4 text-white">
+                                    Domine ferramentas, desenvolva habilidades e otimize processos para o sucesso
+                                    digital.
+                                </p>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Mais
+                                    Cursos</a>
+                            </div>
+                        </div>
+
+                        <!------------------------------------------------------------------------------>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide flex justify-center border-0 min-h-[450px]">
+                            <div
+                                class="flex-shrink-0 w-80 bg-black border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                                <img src="./assets/img/sistema.png" class="w-40 h-40 mx-auto mb-4 rounded-full"
+                                    alt="" />
+                                <h3 class="text-xl font-semibold mb-2 text-[#e63946]">Sistemas Operacionais</h3>
+                                <p class="text-sm mb-4 text-white">
+                                    controle o funcionamento de computadores e dispositivos, gerenciando recursos e
+                                    garantindo eficiência operacional.
+                                </p>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Mais
+                                    Cursos</a>
+                            </div>
+                        </div>
+
+                        <!------------------------------------------------------------------------------>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide flex justify-center border-0 min-h-[450px]">
+                            <div
+                                class="flex-shrink-0 w-80 bg-black border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                                <img src="./assets/img/ciberseguranca.png" class="w-40 h-40 mx-auto mb-4 rounded-full"
+                                    alt="" />
+                                <h3 class="text-xl font-semibold mb-2 text-[#e63946]">Cyber Segurança</h3>
+                                <p class="text-sm mb-4 text-white">
+                                    Descubra cibersegurança: proteja dados, redes e sistemas contra ameaças digitais com
+                                    estratégias avançadas.
+                                </p>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Mais
+                                    Cursos</a>
+                            </div>
+                        </div>
+
+                        <!------------------------------------------------------------------------------>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide flex justify-center border-0 min-h-[450px]">
+                            <div
+                                class="flex-shrink-0 w-80 bg-black border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                                <img src="./assets/img/itPro.png" class="w-40 h-40 mx-auto mb-4 rounded-full" alt="" />
+                                <h3 class="text-xl font-semibold mb-2 text-[#e63946]">IT Profissional</h3>
+                                <p class="text-sm mb-4 text-white">
+                                    Desbrave a TI: gerencie sistemas, otimize operações e impulsione a inovação
+                                    tecnológica.
+                                </p>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Mais
+                                    Cursos</a>
+                            </div>
+                        </div>
+
+                        <!------------------------------------------------------------------------------>
+
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide flex justify-center border-0 min-h-[450px]">
+                            <div
+                                class="flex-shrink-0 w-80 bg-black border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                                <img src="./assets/img/gestao.png" class="w-40 h-40 mx-auto mb-4 rounded-full" alt="" />
+                                <h3 class="text-xl font-semibold mb-2 text-[#e63946]">Gestão de Direções Tecnológicas
+                                </h3>
+                                <p class="text-sm mb-4 text-white">
+                                    Gestão de Tecnologia: otimize estratégias, promova inovação e conduza direções
+                                    tecnológicas com eficiência
+                                </p>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800 mb-2">Iniciar</a>
+                                <a href="#"
+                                    class="block w-full py-2 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Mais
+                                    Cursos</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Paginação -->
+                    <div class="swiper-pagination mt-4"></div>
+
+                    <!-- Navegação -->
+                    <div class="swiper-button-prev text-white"></div>
+                    <div class="swiper-button-next text-white"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parceiros -->
+        <section class="w-full py-16 container lg:py-32 mx-auto px-4 text-center">
+            <h2
+                class="text-3xl font-bold mb-6 bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent ">
+                Parceiros</h2>
+            <p class="max-w-xl mx-auto mb-8">
+                Conheça alguns dos nossos parceiros! Entidades que ajudam a levar inovação até você.
+            </p>
+
+            <!-- Swiper Container -->
+            <div class="swiper partner-swiper">
+                <div class="swiper-wrapper items-center">
+                    <!-- Cada imagem é um slide -->
+                    <div class="swiper-slide flex justify-center items-center px-4">
+                        <img src="./assets/img/gov.png" alt="gov" class="h-12 object-contain" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center px-4">
+                        <img src="./assets/img/google.png" alt="google" class="h-12 object-contain" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center px-4">
+                        <img src="./assets/img/dtser.png" alt="dtser" class="h-12 object-contain" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center px-4">
+                        <img src="./assets/img/republica (1).png" alt="republica" class="h-12 object-contain" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center px-4">
+                        <img src="./assets/img/micro.png" alt="microsoft" class="h-12 object-contain" />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Serviços -->
+        <section class="w-full py-16 lg:py-32 bg-neutral-950 border flex flex-col items-center justify-center md:px-4">
+            <div class=" mx-auto px-4 text-center border-0 flex flex-col  items-center justify-center md:w-full sm:space-x-4 sm:space-y-4">
+                <h2 class="text-3xl font-bold mb-6 bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent ">Serviços</h2>
+                <p class="max-w-2xl mx-auto mb-12">Oferecemos soluções inovadoras para transformar desafios emoportunidades.</p>
+
+                <div class="w-full justify-center space-y-4 flex flex-col md:flex-row border-0 items-center p-4 lg:flex-row lg:justify-center lg:items-center lg:space-x-4 md:space-x-4 ">
+
+                    <div class="border w-[300px] h-[350px] rounded-2xl shadow p-4 flex flex-col justify-center space-y-4">
+                        <img src="./assets/img/dev.png" class="h-16 mx-auto mb-2">
+                        <h3 class="font-semibold">Desenvolvimento</h3>
+                        <p class="text-gray-300 text-sm">
+                            Soluções sob medida em desenvolvimento de sites, sistemas e aplicações. Criamos plataformas
+                            modernas, seguras e escaláveis para impulsionar o seu negócio no ambiente digital.
+                        </p>
+                    </div>
+                    <div
+                        class="border w-[300px] h-[350px] rounded-2xl shadow p-4 flex flex-col justify-center space-y-4">
+                        <img src="./assets/img/auditoria.png" class="h-16 mx-auto mb-2">
+                        <h3 class="font-semibold">Auditoria TI</h3>
+                        <p class="text-gray-300 text-sm">
+                            Avaliamos a segurança dos seus sistemas, redes e dados, identificando vulnerabilidades e
+                            assegurando a conformidade com normas e boas práticas de TI.
+                        </p>
+                    </div>
+                    <div
+                        class="border w-[300px] h-[350px] rounded-2xl shadow p-4 flex flex-col justify-center space-y-4">
+                        <img src="./assets/img/formacao.png" class="h-16 mx-auto mb-2">
+                        <h3 class="font-semibold">Formação</h3>
+                        <p class="text-gray-300 text-sm ">
+                            Desenvolvemos programas de formação em TI sob medida para empresas, com foco em
+                            produtividade, atualização tecnológica e melhoria contínua das equipes.
+                        </p>
+                    </div>
+                    <div
+                        class="border w-[300px] h-[350px] rounded-2xl shadow p-4 flex flex-col justify-center space-y-4">
+                        <img src="./assets/img/appMobile.png" class="h-16 mx-auto mb-2">
+                        <h3 class="font-semibold">Aplicativos</h3>
+                        <p class="text-gray-300 text-sm">
+                            Desenvolvemos aplicativos personalizados para Android e iOS, com foco em usabilidade,
+                            performance e inovação. Transforme sua ideia em uma solução mobile prática, moderna e
+                            escalável.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quem Somos -->
+        <section class="w-full py-16 container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent">
+                Quem Somos</h2>
+            <p class="max-w-2xl mx-auto mb-6">Somos uma empresa de tecnologia e assessoria jurídica, fundada em 2013 em
+                Luanda. Focamos em softwares, sistemas críticos e soluções eletrônicas.</p>
+            <p class="max-w-2xl mx-auto">Garantimos eficiência, serviços atualizados e suporte personalizado para ajudar
+                você a atingir seus objetivos.</p>
+        </section>
+
+        <!-- Fale Conosco -->
+        <section class="w-full py-16 bg-neutral-950">
+            <div class="container mx-auto px-4 text-center">
+                <h3
+                    class="text-2xl font-bold mb-6 bg-gradient-to-t from-red-700 to-pink-600 bg-clip-text text-transparent">
+                    Fale Conosco</h3>
+                <form class="max-w-lg mx-auto space-y-4">
+                    <input type="text" placeholder="Seu Nome"
+                        class="w-full p-3 rounded bg-neutral-800 border border-neutral-600">
+                    <input type="email" placeholder="Seu Email"
+                        class="w-full p-3 rounded bg-neutral-800 border border-neutral-600">
+                    <textarea placeholder="Sua Mensagem" rows="4"
+                        class="w-full p-3 rounded bg-neutral-800 border border-neutral-600"></textarea>
+                    <button class="w-full py-3 bg-[#e63946] text-white rounded-lg hover:bg-red-800">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="bg-black text-white py-12 px-4 mt-0 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Coluna 1: Logo + nome -->
+            <div class="flex flex-col items-start gap-2">
+                <img src="./assets/img/logo.png" alt="Logo Zeiner" class="w-16 h-16">
+                <h2 class="text-xl font-bold">ZEINER</h2>
+                <p class="text-sm text-gray-400">Inovação & Soluções</p>
+            </div>
+
+            <!-- Coluna 2: Links Rápidos -->
+            <div>
+                <h3 class="text-lg font-semibold mb-2 text-blue-400">Links Rápidos</h3>
+                <ul class="text-sm flex flex-col gap-1">
+                    <li><a href="#cursos" class="hover:text-blue-400 transition">Cursos</a></li>
+                    <li><a href="#servicos" class="hover:text-blue-400 transition">Serviços</a></li>
+                    <li><a href="#videos" class="hover:text-blue-400 transition">Vídeos</a></li>
+                    <li><a href="#sobre" class="hover:text-blue-400 transition">Quem Somos</a></li>
+                    <li><a href="#contato" class="hover:text-blue-400 transition">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Contato -->
+            <div>
+                <h3 class="text-lg font-semibold mb-2 text-blue-400">Contatos</h3>
+                <ul class="text-sm text-gray-400 flex flex-col gap-1">
+                    <li class="space-x-2"><i
+                            class="fa-solid fa-location-dot hover:text-blue-400 text-xl text-white"></i>Centralidade do
+                        Kilamba
+                        Bloco N Prédio
+                        N-11 APTº 23 2º Andar</li>
+                    <li><i class="fa-solid fa-phone hover:text-blue-400 text-xl text-white"></i> +244 923 293 338 | +244
+                        923 906 015
+                    </li>
+                    <li><i class="fa-solid fa-envelope hover:text-blue-400 text-xl text-white"></i> geral@zeiner.co.ao |
+                        info@zeiner.co.ao | comercial@zeiner.co.ao</li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Redes Sociais -->
+            <div>
+                <h3 class="text-lg font-semibold mb-2 text-blue-400">Redes Sociais</h3>
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/profile.php?id=100078265360589&mibextid=rS40aB7S9Ucbxw6v"
+                        class="hover:text-blue-400 text-xl"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/zeiner.tecnologia?igsh=MTJ0MDM4emN3cWJrbQ=="
+                        class="hover:text-blue-400 text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-blue-400 text-xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-blue-400 text-xl"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-10 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+            &copy; 2025 ZEINER. Todos os direitos reservados.
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/app.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</body>
+
+</html>
