@@ -7,40 +7,57 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon" />
     <title>ZEINER | Inovação e Soluções</title>
-    <link rel="stylesheet" href="./src/output.css" />
+    <!--<link rel="stylesheet" href="./src/output.css" /> -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
-<body class="bg-[url('assets/img/bg2.jpg')] bg-fixed bg-cover bg-center min-h-screen text-white">
+<body class="bg-[url('assets/img/bg2.jpg')] bg-fixed bg-cover bg-center">
 
     <!-- HEADER -->
-    <header
-        class="flex-row lg:fixed text-black w-full lg:px-20 flex justify-between items-center h-16 md:h-20 lg:h-16 shadow-2xl/20 border-amber-700 bg-white">
-        <div class="flex items-center">
-            <img src="./assets/img/logo.png" alt="logo-zeiner" class="w-12 h-auto" />
-            <span>ZEINER</span>
+    <nav class="md:px-20 p-5 md:shadow md:flex md:items-center md:justify-between bg-black md:bg-black/80">
+        <div class="flex justify-between items-center">
+            <span class="flex items-center justify-center text-2xl font-bold cursor-pointer text-red-600">
+                <img class="h-10 inline"
+                    src="./assets/img/logo.png"
+                    alt="">
+                ZEINER
+            </span>
+
+            <span class="text-3xl cursor-pointer block md:hidden mx-2 text-white">
+                <i class="fa-solid fa-bars" name="menu" id="menu"></i>
+            </span>
         </div>
-        <nav class="absolute mt-40 w-full h-90 flex flex-col justify-center items-center border-2 border-green-400 " id="nav-toggle">
-            <ul class="gap-6 text-sm flex flex-col">
-                <li class=""><a href=""
-                        class="border-0 border-green-200  p-2 hover:underline transition duration-400 ease-in">CURSOS</a>
-                </li>
-                <li class=""><a href="" class="border-0 hover:underline p-2 transition duration-400 ease-in">LOGIN</a>
-                </li>
-            </ul>
-        </nav>
-        <button id="toggle-btn" class="lg:hidden">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </header>
+
+        <ul class="bg-black/90 md:bg-black/0 md:mt-5 md:bg-none transform md:transform-none md:flex md:items-center border-0 border-green-300 z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 hidden opacity-0 transition-all ease-in-out duration-300 scale-y-0 md:scale-y-100 origin-top"
+            id="itemsList">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="" class="text-xl hover:text-red-700 text-white duration-700 ease-in">HOME</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="" class="text-xl hover:text-red-700 text-white duration-500">CURSOS</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="" class="text-xl hover:text-red-700 text-white duration-500">SOBRE</a>
+            </li>
+
+            <button
+                class="bg-red-700 text-white duration-500 px-6 py-2 mx-4 hover:bg-red-800 rounded cursor-pointer">
+                LOGIN
+            </button>
+        </ul>
+
+    </nav>
+
+
+
     <!-- CAMADA ESCURA SEMI-TRANSPARENTE E LAYOUT PRINCIPAL -->
-    <div class=" bg-blue-800/78 min-h-screen flex flex-col">
+    <div class=" bg-black/80 min-h-screen flex flex-col">
 
 
         <!--Hero da Pagina-->
         <section class="hero min-h-screen border-0 flex justify-center items-center">
             <div class="max-w-7xl mx-auto px-6 text-center border-0">
-                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 font-sans">
                     Soluções digitais sob medida para grandes desafios
                 </h1>
                 <h2 class="text-2xl md:text-xl text-white mb-8">
@@ -49,13 +66,11 @@
                 <p class="text-lg md:text-xl text-white mb-8">
                     "Ispiramos inovação e promovemos a igualdade"
                 </p>
-                <div class="flex justify-center space-x-4">
-                    <a href="#servicos"
-                        class="bg-green-700 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-green-800 transition">
+                <div class="flex p-6 justify-center items-center space-x-4 flex-col space-y-6 md:space-y-0 md:items-center md:justify-center md:flex-row border-0">
+                    <a href="#servicos" class="bg-red-700 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-red-800 transition">
                         SEGURANÇA DE DADOS
                     </a>
-                    <a href="#contato"
-                        class="border border-green-700 text-white px-6 py-3 rounded-md text-lg font-medium hover:border-green-800 transition">
+                    <a href="#contato" class="border border-white text-red-700 px-6 py-3 rounded-md text-lg font-medium hover:border-red-800 transition">
                         SOFTWARES
                     </a>
                 </div>
@@ -63,20 +78,19 @@
         </section>
 
         <!-- CONTEÚDO PRINCIPAL QUE CRESCE -->
-        <main
-            class="w-full min-h-screen flex lg:flex-col lg:justify-center lg:items-center mx-auto px-20 p-8 bg-white  mt-6 ">
+        <main class="w-full min-h-screen flex lg:flex-col lg:justify-center lg:items-center mx-auto px-20 p-8 bg-black/90  mt-6 border-0 border-red-900">
             <section class="hidden w-full flex lg:justify-between mb-6 border-0 border-gray-700 items-center ">
                 <div class="border-0 border-green-700 p-4 "><a href="" class="border-0">SEGURANÇA DE DADOS</a></div>
                 <div class="border-0 border-green-700 p-4 "><a href=""
                         class="hover:underline hover:transition duration-300">SOFTWARES</a></div>
             </section>
 
-            <section class="container w-full flex flex-col lg:flex-row gap-6 p-4 text-gray-800">
+            <section class="container w-full flex flex-col lg:flex-row gap-6 p-4 text-white">
 
                 <!-- CARD 1 -->
                 <div class="flex flex-col justify-center items-center rounded-md p-4 space-y-4">
                     <img src="./assets/img/missao.svg" alt="" class="rounded-full border-0 w-24 h-24">
-                    <h1 class="text-xl font-bold mb-2">MISSÃO</h1>
+                    <h1 class="text-xl font-bold mb-2 text-red-700">MISSÃO</h1>
                     <p class="text-xs font-light">
                         Nossa missão é entregar soluções digitais de alto desempenho, com foco em inovação, eficiência e
                         impacto real para empresas e instituições públicas.
@@ -92,12 +106,12 @@
                 <!-- CARD 2 -->
                 <div class="rounded-md bg-green-00 p-4 space-y-4 flex flex-col justify-center items-center">
                     <img src="./assets/img/visao.svg" alt="" class="rounded-full border-0 w-24 h-24">
-                    <h1 class="text-xl font-bold mb-2">VISÃO</h1>
+                    <h1 class="text-xl font-bold mb-2 text-red-700">VISÃO</h1>
                     <p class="text-xs font-light">
                         Ser referência nacional em tecnologia aplicada à transformação digital no setor público e
                         corporativo, promovendo progresso com responsabilidade.
                     </p>
-                     <p class="text-xs font-light">
+                    <p class="text-xs font-light">
                         Ser referência nacional em tecnologia aplicada à transformação digital no setor público e
                         corporativo, promovendo progresso com responsabilidade.
                     </p>
@@ -106,7 +120,7 @@
                 <!-- CARD 3 -->
                 <div class="rounded-md bg-green-00 p-4 space-y-4 flex flex-col justify-center items-center">
                     <img src="./assets/img/valores.svg" alt="" class="rounded-full border-0 w-24 h-24">
-                    <h1 class="text-xl font-bold mb-2">VALORES</h1>
+                    <h1 class="text-xl font-bold mb-2 text-red-700">VALORES</h1>
                     <p class="text-xs font-light">
                         Ética, excelência, inovação, transparência e compromisso com os resultados dos nossos clientes
                         são os pilares que sustentam nosso trabalho.
@@ -127,15 +141,15 @@
 
         </main>
         <!-- FOOTER FIXO NO FINAL -->
-        <footer
-            class=" border-amber-700 p-4 flex flex-col justify-center items-start bg-black/60 px-20 space-y-2">
-            <h1 class="text-lg font-semibold">SERVIÇOS</h1>
-            <ul class="justify-center gap-4 flex flex-col text-xs">
+        <footer class=" border-amber-700 p-4 flex flex-col justify-center items-start bg-black/100 px-20 py-10 space-y-6">
+            <h1 class="text-lg font-semibold text-red-700">SERVIÇOS</h1>
+            <ul class="justify-center gap-4 flex flex-col text-xs text-white">
                 <li><a href="">Hospedagem</a></li>
                 <li><a href="">Auditoria</a></li>
             </ul>
+            
             <div class="container text-center">
-                <h2 class="text-xs">
+                <h2 class="text-md text-white">
                     Todos os direitos reservados™ Copyright ZEINER© NIF: 5000965715
                 </h2>
             </div>
