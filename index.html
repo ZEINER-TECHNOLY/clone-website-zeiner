@@ -16,12 +16,12 @@
     <!-- HEADER -->
     <nav class="md:px-20 p-5 md:shadow md:flex md:items-center md:justify-between bg-black md:bg-black/80">
         <div class="flex justify-between items-center">
-            <span class="flex items-center justify-center text-2xl font-bold cursor-pointer text-red-600">
-                <img class="h-10 inline"
-                    src="./assets/img/logo.png"
-                    alt="">
-                ZEINER
-            </span>
+            <a href="./index.html">
+                <span class="flex items-center justify-center text-2xl font-bold cursor-pointer text-red-600">
+                    <img class="h-10 inline" src="./assets/img/logo.png" alt="">
+                    ZEINER
+                </span>
+            </a>
 
             <span class="text-3xl cursor-pointer block md:hidden mx-2 text-white">
                 <i class="fa-solid fa-bars" name="menu" id="menu"></i>
@@ -39,11 +39,11 @@
             <li class="mx-4 my-6 md:my-0">
                 <a href="" class="text-xl hover:text-red-700 text-white duration-500">SOBRE</a>
             </li>
-
-            <button
-                class="bg-red-700 text-white duration-500 px-6 py-2 mx-4 hover:bg-red-800 rounded cursor-pointer">
-                LOGIN
-            </button>
+            <a href="./pages/login.html">
+                <button class="bg-red-700 text-white duration-500 px-6 py-2 mx-4 hover:bg-red-800 rounded cursor-pointer">
+                    LOGIN
+                </button>
+            </a>
         </ul>
 
     </nav>
@@ -66,11 +66,14 @@
                 <p class="text-lg md:text-xl text-white mb-8">
                     "Ispiramos inovação e promovemos a igualdade"
                 </p>
-                <div class="flex p-6 justify-center items-center space-x-4 flex-col space-y-6 md:space-y-0 md:items-center md:justify-center md:flex-row border-0">
-                    <a href="#servicos" class="bg-red-700 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-red-800 transition">
+                <div
+                    class="flex p-6 justify-center items-center space-x-4 flex-col space-y-6 md:space-y-0 md:items-center md:justify-center md:flex-row border-0">
+                    <a href="#servicos"
+                        class="bg-red-700 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-red-800 transition">
                         SEGURANÇA DE DADOS
                     </a>
-                    <a href="#contato" class="border border-white text-red-700 px-6 py-3 rounded-md text-lg font-medium hover:border-red-800 transition">
+                    <a href="#contato"
+                        class="border border-white text-red-700 px-6 py-3 rounded-md text-lg font-medium hover:border-red-800 transition">
                         SOFTWARES
                     </a>
                 </div>
@@ -78,76 +81,66 @@
         </section>
 
         <!-- CONTEÚDO PRINCIPAL QUE CRESCE -->
-        <main class="w-full min-h-screen flex lg:flex-col lg:justify-center lg:items-center mx-auto px-20 p-8 bg-black/90  mt-6 border-0 border-red-900">
+        <main
+            class="w-full min-h-screen flex lg:flex-col lg:justify-center lg:items-center mx-auto px-20 p-8 bg-black/90  mt-6 border-0 border-red-900">
             <section class="hidden w-full flex lg:justify-between mb-6 border-0 border-gray-700 items-center ">
                 <div class="border-0 border-green-700 p-4 "><a href="" class="border-0">SEGURANÇA DE DADOS</a></div>
                 <div class="border-0 border-green-700 p-4 "><a href=""
                         class="hover:underline hover:transition duration-300">SOFTWARES</a></div>
             </section>
 
-            <section class="container w-full flex flex-col lg:flex-row gap-6 p-4 text-white">
+            <section class="w-full px-2 sm:px-4 md:px-6 lg:px-8 py-6 bg-black text-white">
 
-                <!-- CARD 1 -->
-                <div class="flex flex-col justify-center items-center rounded-md p-4 space-y-4">
-                    <img src="./assets/img/missao.svg" alt="" class="rounded-full border-0 w-24 h-24">
-                    <h1 class="text-xl font-bold mb-2 text-red-700">MISSÃO</h1>
-                    <p class="text-xs font-light">
-                        Nossa missão é entregar soluções digitais de alto desempenho, com foco em inovação, eficiência e
-                        impacto real para empresas e instituições públicas.
-                        lore
-                    </p>
-                    <p class="text-xs font-light">
-                        Nossa missão é entregar soluções digitais de alto desempenho, com foco em inovação, eficiência e
-                        impacto real para empresas e instituições públicas.
-                        lore
-                    </p>
-                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
 
-                <!-- CARD 2 -->
-                <div class="rounded-md bg-green-00 p-4 space-y-4 flex flex-col justify-center items-center">
-                    <img src="./assets/img/visao.svg" alt="" class="rounded-full border-0 w-24 h-24">
-                    <h1 class="text-xl font-bold mb-2 text-red-700">VISÃO</h1>
-                    <p class="text-xs font-light">
-                        Ser referência nacional em tecnologia aplicada à transformação digital no setor público e
-                        corporativo, promovendo progresso com responsabilidade.
-                    </p>
-                    <p class="text-xs font-light">
-                        Ser referência nacional em tecnologia aplicada à transformação digital no setor público e
-                        corporativo, promovendo progresso com responsabilidade.
-                    </p>
-                </div>
+                    <!-- CARD 1 -->
+                    <div
+                        class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
+                        <img src="./assets/img/missao.svg" alt="" class="rounded-full w-24 h-24">
+                        <h1 class="text-xl font-bold mb-2 text-red-600">MISSÃO</h1>
+                        <p class="text-sm font-light text-gray-300 text-center">
+                            Nossa missão é entregar soluções digitais de alto desempenho, com foco em inovação,
+                            eficiência e impacto real para empresas e instituições públicas.
+                        </p>
+                    </div>
 
-                <!-- CARD 3 -->
-                <div class="rounded-md bg-green-00 p-4 space-y-4 flex flex-col justify-center items-center">
-                    <img src="./assets/img/valores.svg" alt="" class="rounded-full border-0 w-24 h-24">
-                    <h1 class="text-xl font-bold mb-2 text-red-700">VALORES</h1>
-                    <p class="text-xs font-light">
-                        Ética, excelência, inovação, transparência e compromisso com os resultados dos nossos clientes
-                        são os pilares que sustentam nosso trabalho.
-                    </p>
-                    <p class="text-xs font-light mt-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, commodi ipsam doloremque autem
-                        distinctio, numquam reiciendis ab quod animi delectus fuga culpa quas ipsa minus, odio aut modi
-                        vero eum.
-                    </p>
-                    <p class="text-xs font-light mt-2">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto quos libero voluptates
-                        exercitationem quasi vitae eligendi odio odit minima est sed voluptatem optio consequatur fugiat
-                        culpa in, autem placeat fugit?
-                    </p>
+                    <!-- CARD 2 -->
+                    <div
+                        class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
+                        <img src="./assets/img/visao.svg" alt="" class="rounded-full w-24 h-24">
+                        <h1 class="text-xl font-bold mb-2 text-red-600">VISÃO</h1>
+                        <p class="text-sm font-light text-gray-300 text-center">
+                            Ser referência nacional em tecnologia aplicada à transformação digital no setor público e
+                            corporativo, promovendo progresso com responsabilidade.
+                        </p>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div
+                        class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
+                        <img src="./assets/img/valores.svg" alt="" class="rounded-full w-24 h-24">
+                        <h1 class="text-xl font-bold mb-2 text-red-600">VALORES</h1>
+                        <p class="text-sm font-light text-gray-300 text-center">
+                            Ética, excelência, inovação, transparência e compromisso com os resultados dos nossos
+                            clientes são os pilares que sustentam nosso trabalho.
+                        </p>
+                    </div>
+
                 </div>
 
             </section>
 
+
         </main>
         <!-- FOOTER FIXO NO FINAL -->
-        <footer class=" border-amber-700 p-4 flex flex-col justify-center items-start bg-black/100 px-20 py-10 space-y-6">
+        <footer
+            class=" border-amber-700 p-4 flex flex-col justify-center items-start bg-black/100 px-20 py-10 space-y-6">
             <h1 class="text-lg font-semibold text-red-700">SERVIÇOS</h1>
             <ul class="justify-center gap-4 flex flex-col text-xs text-white">
                 <li><a href="">Hospedagem</a></li>
                 <li><a href="">Auditoria</a></li>
             </ul>
-            
+
             <div class="container text-center">
                 <h2 class="text-md text-white">
                     Todos os direitos reservados™ Copyright ZEINER© NIF: 5000965715
