@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>ZEINER | login</title>
+</head>
+
+<body class="bg-[url('../assets/img/bg1.jpg')] bg-fixed bg-cover bg-center">
+
+    <!-- HEADER -->
+    <nav class="md:px-20 p-5 md:shadow md:flex md:items-center md:justify-between bg-black md:bg-black/80">
+        <div class="flex justify-between items-center">
+            <a href="../index.html">
+                <span class="flex items-center justify-center md:text-2xl  text-xl font-bold cursor-pointer text-red-600">
+                    <img class="h-7 inline" src="../assets/img/logo.png" alt="">
+                    ZEINER
+                </span>
+            </a>
+
+            <span class="md:text-3xl text-2xl cursor-pointer block md:hidden mx-2 text-white">
+                <i class="fa-solid fa-bars" name="menu" id="menu"></i>
+            </span>
+        </div>
+
+        <ul class="bg-black/90 md:bg-black/0 md:mt-5 md:bg-none transform md:transform-none md:flex md:items-center border-0 border-green-300 z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 hidden opacity-0 transition-all ease-in-out duration-300 scale-y-0 md:scale-y-100 origin-top"
+            id="itemsList">
+            <li class="mx-4 my-6 md:my-0 border-0 border-green-700">
+                <a href="" class="md:text-xl hover:text-red-700 text-white duration-700 ease-in">HOME</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="" class="md:text-xl hover:text-red-700 text-white duration-500">CURSOS</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="./pages/login.html" class="md:text-xl hover:text-red-700 text-white duration-500">LOGIN</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- CAMADA ESCURA SEMI-TRANSPARENTE E LAYOUT PRINCIPAL -->
+
+    <main class="h-full md:min-h-screen  bg-black/60 flex justify-center items-center">
+        <section class="border-0 bg-black/75 text-white w-full min-h-full rounded md:w-100 md:border-0 py-8">
+            <h1>Pagina Cursos em Manutenção</h1>
+        </section>
+    </main>
+
+    <!-- CONTEÚDO PRINCIPAL QUE CRESCE -->
+
+    <!-- FOOTER FIXO NO FINAL -->
+    <footer
+        class="md:px-20  border-amber-700 p-4 flex flex-col justify-center items-start bg-black/100 px-8 pt-10 space-y-6 border-0">
+        <h1 class="text-lg font-semibold text-red-700">SERVIÇOS</h1>
+        <ul class="justify-center gap-2 flex flex-col text-sm text-white">
+            <li class="underline hover:text-gray-300"><a href="" class="underline">Hospedagem</a></li>
+            <li class="underline hover:text-gray-300"><a href="" class="underline">Auditoria</a></li>
+        </ul>
+
+        <div class="container text-center border-t border-gray-300 md:border-t md:border-gray-300 py-2">
+            <h2 class="text-xs text-white">
+                Todos os direitos reservados™ Copyright ZEINER© NIF: 5000965715
+            </h2>
+        </div>
+    </footer>
+
+    </div>
+    <script src="../assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/e3668cdb43.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
