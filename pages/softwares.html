@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>ZEINER | login</title>
+    <!--Elementor tailwindcss-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <title>ZEINER | Softwares</title>
 </head>
 
 <body class="bg-[url('../assets/img/bg1.jpg')] bg-fixed bg-cover bg-center">
@@ -14,7 +16,8 @@
     <nav class="md:px-20 p-5 md:shadow md:flex md:items-center md:justify-between bg-black md:bg-black/80">
         <div class="flex justify-between items-center">
             <a href="../index.html">
-                <span class="flex items-center justify-center md:text-2xl  text-xl font-bold cursor-pointer text-red-600">
+                <span
+                    class="flex items-center justify-center md:text-2xl  text-xl font-bold cursor-pointer text-red-600">
                     <img class="h-7 inline" src="../assets/img/logo.png" alt="">
                     ZEINER
                 </span>
@@ -42,10 +45,86 @@
 
     <!-- CAMADA ESCURA SEMI-TRANSPARENTE E LAYOUT PRINCIPAL -->
 
-    <main class="h-full md:min-h-screen  bg-black/60 flex justify-center items-center">
-        <section class="border-0 bg-black/75 text-white w-full min-h-full rounded md:w-100 md:border-0 py-8">
-            <h1>Pagina Softwares em Manutenção</h1>
+    <!-- CONTEÚDO PRINCIPAL QUE CRESCE -->
+    <main
+        class="w-full px-5 min-h-screen md:min-h-screen flex lg:flex-col lg:justify-center lg:items-center mx-auto md:px-20 p-8 bg-black/100  border-0 border-red-900">
+
+        <section class="w-full md:flex md:flex-row space-x-4 px-2 sm:px-4 md:px-6 lg:px-8 py-6 bg-black text-white">
+            <div class="w-full flex md:border-r border-none border-gray-300 p-2 px-0 border-0">
+                <el-dropdown class="inline-block">
+                    <button
+                        class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white inset-ring-1 inset-ring-white/5 hover:bg-white/20">
+                        Categorias de Softwares
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="-mr-1 size-5 text-gray-400">
+                            <path
+                                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <el-menu anchor="bottom end" popover
+                        class="w-56 origin-top-right divide-y divide-white/10 rounded-md bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                        <div class="py-1">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Software de Gestão Escolar</a>
+                        </div>
+                        <div class="py-1">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Software de Gestão de Empresas</a>
+                        </div>
+                        <div class="py-1">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Software de Gestão Hospitalar</a>
+                        </div>
+                        <div class="py-1">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Software Governamentais</a>
+                        </div>
+                    </el-menu>
+                </el-dropdown>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+
+                <!-- CARD 1 -->
+                <div
+                    class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
+                    <img src="./assets/img/missao.svg" alt="" class="rounded-full w-24 h-24">
+                    <h1 class="text-xl font-bold mb-2 text-red-600">MISSÃO</h1>
+                    <p class="text-sm font-light text-gray-300 text-center">
+                        Nossa missão é entregar soluções digitais de alto desempenho, com foco em inovação,
+                        eficiência e impacto real para empresas e instituições públicas.
+                    </p>
+                </div>
+
+                <!-- CARD 2 -->
+                <div
+                    class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
+                    <img src="./assets/img/visao.svg" alt="" class="rounded-full w-24 h-24">
+                    <h1 class="text-xl font-bold mb-2 text-red-600">VISÃO</h1>
+                    <p class="text-sm font-light text-gray-300 text-center">
+                        Ser referência nacional em tecnologia aplicada à transformação digital no setor público e
+                        corporativo, promovendo progresso com responsabilidade.
+                    </p>
+                </div>
+
+                <!-- CARD 3 -->
+                <div
+                    class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
+                    <img src="./assets/img/valores.svg" alt="" class="rounded-full w-24 h-24">
+                    <h1 class="text-xl font-bold mb-2 text-red-600">VALORES</h1>
+                    <p class="text-sm font-light text-gray-300 text-center">
+                        Ética, excelência, inovação, transparência e compromisso com os resultados dos nossos
+                        clientes são os pilares que sustentam nosso trabalho.
+                    </p>
+                </div>
+
+            </div>
+
         </section>
+
+
     </main>
 
     <!-- CONTEÚDO PRINCIPAL QUE CRESCE -->
