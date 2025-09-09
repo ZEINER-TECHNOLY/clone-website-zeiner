@@ -4,125 +4,112 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon" />
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuração do Tailwind para usar a fonte Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Fonte Inter do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon e CSS adicional -->
+    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
     <title>ZEINER | Inovação e Soluções</title>
-    <!--<link rel="stylesheet" href="./src/output.css" /> -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
-<body class="bg-[url('assets/img/bg2.jpg')] bg-fixed bg-cover bg-center">
+<body class="bg-[url('assets/img/bg2.jpg')] bg-fixed bg-cover bg-center font-sans">
 
-    <!-- HEADER -->
-    <nav class="md:px-20 p-5 md:shadow md:flex md:items-center md:justify-between bg-black md:bg-black/80">
-        <div class="flex justify-between items-center">
-            <a href="./index.html">
-                <span class="flex items-center justify-center md:text-2xl  text-xl font-bold cursor-pointer text-red-600">
-                    <img class="h-7 inline" src="./assets/img/logo.png" alt="">
-                    ZEINER
-                </span>
-            </a>
+    <!--IMPORTANDO O HEADER-->
+    <%- include('includes/header')%>
 
-            <span class="md:text-3xl text-2xl cursor-pointer block md:hidden mx-2 text-white">
-                <i class="fa-solid fa-bars" name="menu" id="menu"></i>
-            </span>
-        </div>
-
-        <ul class="bg-black/90 md:bg-black/0 md:mt-5 md:bg-none transform md:transform-none md:flex md:items-center border-0 border-green-300 z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 hidden opacity-0 transition-all ease-in-out duration-300 scale-y-0 md:scale-y-100 origin-top"
-            id="itemsList">
-            <li class="mx-4 my-6 md:my-0 border-0 border-green-700">
-                <a href="" class="md:text-xl hover:text-red-700 text-white duration-700 ease-in">HOME</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <a href="" class="md:text-xl hover:text-red-700 text-white duration-500">CURSOS</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <a href="./pages/login.html" class="md:text-xl hover:text-red-700 text-white duration-500">LOGIN</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- CAMADA ESCURA SEMI-TRANSPARENTE E LAYOUT PRINCIPAL -->
-    <div class=" bg-black/80 min-h-screen flex flex-col">
+        <!-- CAMADA ESCURA SEMI-TRANSPARENTE E LAYOUT PRINCIPAL -->
+        <div class=" bg-black/90 min-h-screen flex flex-col">
 
 
-        <!--Hero da Pagina-->
-        <section class="min-h-[40vh] hero md:min-h-screen border-0 border-red-600 flex justify-center items-center">
-            <div class="flex flex-  border-0">
-                <a href="./pages/seguranca.html" class="text-white underline hover:text-gray-300 m-6">
-                    SEGURANÇA DE DADOS
-                </a>
-                <a href="./pages/softwares.html" class="text-white underline hover:text-gray-300 m-6">
-                    SOFTWARES
-                </a>
-            </div>
-        </section>
-
-        <!-- CONTEÚDO PRINCIPAL QUE CRESCE -->
-        <main class="w-full px-5 min-h-screen flex lg:flex-col lg:justify-center lg:items-center mx-auto md:px-20 p-8 bg-black/90  mt-6 border-0 border-red-900">
-
-            <section class="w-full px-2 sm:px-4 md:px-6 lg:px-8 py-6 bg-black text-white">
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-
-                    <!-- CARD 1 -->
-                    <div
-                        class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
-                        <img src="./assets/img/missao.svg" alt="" class="rounded-full w-24 h-24">
-                        <h1 class="text-xl font-bold mb-2 text-red-600">MISSÃO</h1>
-                        <p class="text-sm font-light text-gray-300 text-center">
-                            Nossa missão é entregar soluções digitais de alto desempenho, com foco em inovação,
-                            eficiência e impacto real para empresas e instituições públicas.
-                        </p>
-                    </div>
-
-                    <!-- CARD 2 -->
-                    <div
-                        class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
-                        <img src="./assets/img/visao.svg" alt="" class="rounded-full w-24 h-24">
-                        <h1 class="text-xl font-bold mb-2 text-red-600">VISÃO</h1>
-                        <p class="text-sm font-light text-gray-300 text-center">
-                            Ser referência nacional em tecnologia aplicada à transformação digital no setor público e
-                            corporativo, promovendo progresso com responsabilidade.
-                        </p>
-                    </div>
-
-                    <!-- CARD 3 -->
-                    <div
-                        class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
-                        <img src="./assets/img/valores.svg" alt="" class="rounded-full w-24 h-24">
-                        <h1 class="text-xl font-bold mb-2 text-red-600">VALORES</h1>
-                        <p class="text-sm font-light text-gray-300 text-center">
-                            Ética, excelência, inovação, transparência e compromisso com os resultados dos nossos
-                            clientes são os pilares que sustentam nosso trabalho.
-                        </p>
-                    </div>
-
+            <!--Hero da Pagina-->
+            <section class="min-h-[40vh] hero md:min-h-screen border-0 border-red-600 flex justify-center items-center">
+                <div class="font-bold text-2xl text-gray-50 flex  border-0">
+                    <a href="/seguranca" class="underline hover:text-gray-300 m-6">
+                        SEGURANÇA DE DADOS
+                    </a>
+                    <a href="/softwares" class="underline hover:text-gray-300 m-6">
+                        SOFTWARES
+                    </a>
                 </div>
-
             </section>
 
+            <!-- CONTEÚDO PRINCIPAL QUE CRESCE -->
+            <main
+                class="w-full px-5 min-h-screen flex lg:flex-col lg:justify-center lg:items-center mx-auto md:px-20 p-8 bg-black/90  mt-6 border-0 border-red-900">
 
-        </main>
-        <!-- FOOTER FIXO NO FINAL -->
-        <footer
-            class="md:px-20  border-amber-700 p-4 flex flex-col justify-center items-start bg-black/100 px-8 pt-10 space-y-6 border-0">
-            <h1 class="text-lg font-semibold text-red-700">SERVIÇOS</h1>
-            <ul class="justify-center gap-2 flex flex-col text-sm text-white">
-                <li class="underline hover:text-gray-300"><a href="" class="underline">Hospedagem</a></li>
-                <li class="underline hover:text-gray-300"><a href="" class="underline">Auditoria</a></li>
-            </ul>
+                <section class="w-full px-2 sm:px-4 md:px-6 lg:px-8 py-6 bg-black text-white">
 
-            <div class="container text-center border-t border-gray-300 md:border-t md:border-gray-300 py-2">
-                <h2 class="text-xs text-white">
-                    Todos os direitos reservados™ Copyright ZEINER© NIF: 5000965715
-                </h2>
-            </div>
-        </footer>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
 
-    </div>
+                        <!-- CARD 1 -->
+                        <div
+                            class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
+                            <img src="./assets/img/missao.svg" alt="" class="rounded-full w-24 h-24">
+                            <h1 class="text-xl font-bold mb-2 text-red-600">MISSÃO</h1>
+                            <p class="text-sm font-light text-gray-300 text-center">
+                                A ZEINER fornece serviços orientados para os cliente, destacando-se pela oferta
+                                de soluções em tecnologias, sejam elas simples como Sistemas critico, com
+                                eficiência e fiabilidade. O objetivo é melhorar as tecnologias dos seus clientes,
+                                colaboradores e sociedade em geral.
+                            </p>
+                        </div>
 
-    <script src="./assets/js/app.js"></script>
-    <script src="https://kit.fontawesome.com/e3668cdb43.js" crossorigin="anonymous"></script>
+                        <!-- CARD 2 -->
+                        <div
+                            class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
+                            <img src="./assets/img/visao.svg" alt="" class="rounded-full w-24 h-24">
+                            <h1 class="text-xl font-bold mb-2 text-red-600">VISÃO</h1>
+                            <p class="text-sm font-light text-gray-300 text-center">
+                                Ser e manter-se como uma empresa líder em Desenvolvimento de Softwares,
+                                Proteção de dados, integração de sistemas e comunicação eletrónica, tanto no
+                                contexto nacional e Internacional.
+                            </p>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div
+                            class="flex flex-col justify-center items-center rounded-md p-6 space-y-4 border border-gray-700 bg-gray-900">
+                            <img src="./assets/img/valores.svg" alt="" class="rounded-full w-24 h-24">
+                            <h1 class="text-xl font-bold mb-2 text-red-600">VALORES</h1>
+                            <p class="text-sm font-light text-gray-300 text-center">
+                                A empresa valoriza a criação de valor, promovendo união, solidez, confiança,
+                                transparência e rigor. Estes princípios garantem o desenvolvimento sustentável,
+                                a gestão eficiente do talento e das competências, e asseguram a integridade e
+                                o respeito pelos direitos e deveres dos colaboradores.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+            </main>
+
+            <%- include('includes/footer')%>
+        </div>
+
+        <script src="/js/app.js"></script>
+        <script src="https://kit.fontawesome.com/e3668cdb43.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
