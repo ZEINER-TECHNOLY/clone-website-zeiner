@@ -26,7 +26,10 @@ app.get('/criar-conta', (req, res) => {
 app.get('/softwares', (req, res) => {
     res.render('softwares')
 })
-
+//rota cursos
+app.get('/cursos', (req, res) => {
+    res.render('cursos')
+})
 //rota 
 
 app.listen(port, () => {

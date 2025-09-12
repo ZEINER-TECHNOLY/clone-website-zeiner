@@ -5,23 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>ZEINER | login</title>
+    <title>ZEINER | cursos</title>
 </head>
 
-<body class="bg-[url('../assets/img/bg1.jpg')] bg-fixed bg-cover bg-center">
+<body class="">
 
     <!-- HEADER -->
     <%- include('includes/header') %>
+    <!-- BANNER HERO -->
+
+    <section class="bg-[url('assets/img/estudo-e-tecnologia.png')] py-15 bg-fixed bg-cover flex flex-col border-0 justify-center items-start border-green-500 px-20">
+        <div class=" space-y-4">
+            <h1 class="text-4xl  font-bold text-white text-shadow-amber-950">CURSOS</h1>
+            <p class="text-gray-800">
+                Oferecemos cursos atualizados, com conteúdos relevantes </br> e professores experientes, para garantir a melhor formação em </br> cada etapa da sua jornada.
+            </p>
+        </div>
+    </section>
 
     <!-- CAMADA ESCURA SEMI-TRANSPARENTE E LAYOUT PRINCIPAL -->
 
     <main class="h-full md:min-h-screen  bg-black/60 flex justify-center items-center">
         <section class="border-0 bg-black/75 text-white w-full min-h-full rounded md:w-100 md:border-0 py-8">
-            <h1>Pagina Cursos em Manutenção</h1>
+            <h1 class="text-center text-4xl">Pagina Cursos em Manutenção</h1>
         </section>
     </main>
-
-    <!-- CONTEÚDO PRINCIPAL QUE CRESCE -->
 
     <!-- FOOTER FIXO NO FINAL -->
     <%- include('includes/footer') %>
