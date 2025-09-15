@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZEINER Plataforma</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>        
+</head>
+
+<body class="bg-[url('../public/assets/img/bg1.jpg')] text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex justify-center items-center">
+                <img class="h-8 w-auto" src="public/assets/img/logo.png" alt="">
+                <div class="text-2xl font-bold text-primary-color">ZEINER</div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
+                <a href="#" class="hover:text-primary-color transition-all">Home</a>
+                <a href="#" class="hover:text-primary-color transition-all">Curso</a>
+                <a href="logi" class="hover:text-primary-color transition-all">Login</a>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="md:hidden">
+                <button id="menu-btn"
+                    class="focus:outline-none transition-transform duration-300 transform flex flex-col items-center justify-center space-y-2 w-8 h-8">
+                    <div class="w-6 h-1 bg-gray-700 bar1"></div>
+                    <div class="w-6 h-1 bg-gray-700 bar2"></div>
+                    <div class="w-6 h-1 bg-gray-700 bar3"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu"
+            class="md:hidden hidden flex flex-col gap-2 px-6 pb-6 text-sm font-medium text-gray-700 transition-all duration-300 ease-in-out">
+            <a href="#" class="py-2 hover:text-primary-color transition-all">Home</a>
+            <a href="#" class="py-2 hover:text-primary-color transition-all">Curso</a>
+            <a href="#" class="py-2 hover:text-primary-color transition-all">Login</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="sm:min-h-full text-white py-16 md:py-60 bg-gradient-to-r from-blue-700/70 via-indigo-800 to-blue-900/70 relative overflow-hidden">
+        <div class="absolute inset-0 bg-opacity-50 bg-black"></div>
+        <div class="max-w-6xl mx-auto text-center px-6 relative z-10">
+            <h1
+                class="text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-white to-primary-light-color tracking-tight transition-all duration-300 ease-in-out">
+                Bem-vindo à Plataforma ZEINER
+            </h1>
+            <h2 class="text-2xl">
+                Mais de 12 anos a criar Soluções Tecnológicas
+            </h2>
+            <p class="text-lg mb-10 text-gray-300 leading-relaxed">
+                Ispiramos Inovação e Promovemos a Igualdade.
+            </p>
+            <div class="justify-center md:flex md:justify-center gap-8 flex-wrap flex">
+                <a href="#seguranca"
+                    class="bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-white hover:scale-105 transform">
+                    Segurança de Dados
+                </a>
+                <a href="#software"
+                    class="bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-white hover:scale-105 transform">
+                    Software
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Missão, Visão, Valores -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Missão -->
+            <div
+                class="bg-white p-8 rounded-2xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:translate-y-2 hover:border-t-4 hover:border-primary-color group">
+                <h2
+                    class="text-2xl font-extrabold text-red-700 mb-6 group-hover:text-primary-color transition-all duration-300 ease-in-out">
+                    Missão</h2>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    A ZEINER fornece serviços orientados para os clientes, destacando-se pela oferta de soluções em
+                    tecnologias, sejam elas simples como Sistemas críticos, com eficiência e fiabilidade. O objetivo é
+                    melhorar as tecnologias dos seus clientes, colaboradores e sociedade em geral.
+                </p>
+                <div class="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <p class="text-sm text-gray-500">Transforme seus projetos com a ZEINER. Soluções inovadoras,
+                        expertise e confiança garantidas.</p>
+                </div>
+            </div>
+
+            <!-- Visão -->
+            <div
+                class="bg-white p-8 rounded-2xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:translate-y-2 hover:border-t-4 hover:border-primary-color group">
+                <h2
+                    class="text-2xl font-extrabold text-red-700 mb-6 group-hover:text-primary-color transition-all duration-300 ease-in-out">
+                    Visão</h2>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Ser e manter-se como uma empresa líder em Desenvolvimento de Softwares, Proteção de dados,
+                    integração de sistemas e comunicação eletrónica, tanto no contexto nacional e Internacional.
+                </p>
+                <div class="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <p class="text-sm text-gray-500">A ZEINER está comprometida em ser uma referência mundial em
+                        inovação e soluções digitais.</p>
+                </div>
+            </div>
+
+            <!-- Valores -->
+            <div
+                class="bg-white p-8 rounded-2xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:translate-y-2 hover:border-t-4 hover:border-primary-color group">
+                <h2
+                    class="text-2xl font-extrabold text-red-700 mb-6 group-hover:text-primary-color transition-all duration-300 ease-in-out">
+                    Valores</h2>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    A empresa valoriza a criação de valor, promovendo união, solidez, confiança, transparência e rigor.
+                    Estes princípios garantem o desenvolvimento sustentável, a gestão eficiente do talento e das
+                    competências, e asseguram a integridade e o respeito pelos direitos e deveres dos colaboradores.
+                </p>
+                <div class="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <p class="text-sm text-gray-500">Nossos valores sustentam a inovação e a excelência em tudo o que
+                        fazemos.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-100 py-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:flex md:flex-col">
+            <!-- Serviços -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Serviços</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-primary-light-color">Hospedagem</a></li>
+                    <li><a href="#" class="hover:text-primary-light-color">Auditoria</a></li>
+                </ul>
+            </div>
+
+            <!-- Linha de Separação -->
+            <div class="col-span-2 border-t-2 border-gray-600 my-6"></div>
+
+            <!-- Copyright -->
+            <div class="text-sm text-center text-gray-400 md:text-right border-0">
+                <p class="text-center">Todos os direitos reservados™Copyright ZEINER© NIF: 5000965715</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS para menu mobile com animação -->
+     <script src="public/js/app.js"></script>
+    
+</body>
+
+</html>

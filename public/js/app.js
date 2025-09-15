@@ -1,4 +1,5 @@
-const iconMenu = document.getElementById('menu')
+/**
+ * const iconMenu = document.getElementById('menu')
 const listItems = document.querySelector('ul')
 
 iconMenu.addEventListener('click', (e) => {
@@ -24,3 +25,26 @@ iconMenu.addEventListener('click', (e) => {
         }, 300)
     }
 })
+
+ */
+
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const hamburgerBars = menuBtn.querySelectorAll('div');
+let menuOpen = false;
+
+menuBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+
+    // Animar o menu hamburguer (transformando em "X")
+    menuBtn.classList.toggle('hamburger-open');
+
+    // Mostrar/ocultar o menu mobile com animação
+    if (menuOpen) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('animate-slideDown');
+    } else {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('animate-slideDown');
+    }
+});

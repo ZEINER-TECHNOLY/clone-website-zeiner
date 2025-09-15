@@ -1,4 +1,46 @@
-
-body {
+/*body {
   font-family: "Segoe UI Variable", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+*/
+/* Cores do Design System Rocketseat */
+:root {
+  --primary-color: #8257E5;
+  /* Roxo padrão Rocketseat */
+  --primary-light-color: #9871F5;
+  /* Roxo mais claro */
+  --secondary-color: #F2F2F2;
+  /* Cinza claro */
+  --gray-dark: #333333;
+  --text-color: #E1E1E6;
+  /* Cor do texto principal */
+}
+
+/* Animação para a transição do menu */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+/* Estilo do botão hamburguer */
+.hamburger-open .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-open .bar2 {
+  opacity: 0;
+}
+
+.hamburger-open .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
