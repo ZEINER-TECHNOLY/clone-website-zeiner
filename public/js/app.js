@@ -62,3 +62,16 @@ searchInput.addEventListener('input', function () {
     // Aqui você pode adicionar o código para buscar os cursos conforme o texto digitado.
     console.log('Buscando por: ', this.value);
 });
+
+
+document.querySelectorAll('button').forEach(button => {
+    button.addEventListener('click', function () {
+        const answer = document.querySelector(`#${this.id}-answer`);
+        if (answer.classList.contains('hidden')) {
+            answer.classList.remove('hidden');
+        } else {
+            answer.classList.add('hidden');
+        }
+    });
+});
+

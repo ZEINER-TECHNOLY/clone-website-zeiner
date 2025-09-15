@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospedagem - ZEINER Plataforma</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('public/assets/img/bg1.jpg')] text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html">
+                <div class="flex justify-center items-center cursor-pointer">
+                    <img class="h-8 w-auto" src="public/assets/img/logo.png" alt="">
+                    <div class="text-2xl font-bold text-primary-color">ZEINER</div>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
+                <a href="index.html" class="hover:text-primary-color transition-all">Home</a>
+                <a href="cursos.html" class="hover:text-primary-color transition-all">Curso</a>
+                <a href="login.html" class="hover:text-primary-color transition-all">Login</a>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="md:hidden">
+                <button id="menu-btn"
+                    class="focus:outline-none transition-transform duration-300 transform flex flex-col items-center justify-center space-y-2 w-8 h-8">
+                    <div class="w-6 h-1 bg-gray-700 bar1"></div>
+                    <div class="w-6 h-1 bg-gray-700 bar2"></div>
+                    <div class="w-6 h-1 bg-gray-700 bar3"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu"
+            class="md:hidden hidden flex flex-col gap-2 px-6 pb-6 text-sm font-medium text-gray-700 transition-all duration-300 ease-in-out">
+            <a href="index.html" class="py-2 hover:text-primary-color transition-all">Home</a>
+            <a href="cursos.html" class="py-2 hover:text-primary-color transition-all">Curso</a>
+            <a href="login.html" class="py-2 hover:text-primary-color transition-all">Login</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="sm:min-h-full text-white py-16 md:py-20 bg-gradient-to-r from-blue-700/70 via-indigo-800 to-blue-900/70 relative overflow-hidden">
+        <div class="absolute inset-0 bg-opacity-50 bg-black"></div>
+        <div class="max-w-6xl mx-auto text-center px-6 relative z-10">
+            <h1
+                class="text-3xl font-extrabold mb-6 text-transparent bg-clip-text bg-white to-primary-light-color tracking-tight">
+                Hospedagem Profissional na ZEINER
+            </h1>
+            <p class="text-lg mb-10 text-gray-300 leading-relaxed">
+                Oferecemos soluções de hospedagem rápidas, seguras e escaláveis para suas necessidades.
+            </p>
+            <button class="bg-red-700 text-white px-6 py-3 rounded-md hover:bg-red-800 transition duration-300">Saiba
+                Mais</button>
+        </div>
+    </section>
+
+    <!-- Planos de Hospedagem -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center px-6">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Escolha o Plano Perfeito para Você</h2>
+            <p class="text-lg mb-12 text-gray-600">Temos planos ideais para todos os tipos de sites e necessidades.
+                Confira as opções abaixo!</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Plano Básico -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano Básico</h3>
+                    <p class="text-lg text-gray-600 mb-6">Ideal para sites pequenos e blogs pessoais.</p>
+                    <div class="text-3xl font-bold text-gray-800 mb-6">R$ 19,99/mês</div>
+                    <ul class="text-left text-gray-600 mb-6">
+                        <li>1 Domínio Incluso</li>
+                        <li>10 GB de Armazenamento</li>
+                        <li>Suporte 24/7</li>
+                    </ul>
+                    <button
+                        class="w-full bg-red-700 text-white py-2 rounded-md hover:bg-red-800 transition duration-300">Contratar
+                        Agora</button>
+                </div>
+
+                <!-- Plano Intermediário -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano Intermediário</h3>
+                    <p class="text-lg text-gray-600 mb-6">Para sites de médio porte e lojas online.</p>
+                    <div class="text-3xl font-bold text-gray-800 mb-6">R$ 49,99/mês</div>
+                    <ul class="text-left text-gray-600 mb-6">
+                        <li>2 Domínios Inclusos</li>
+                        <li>50 GB de Armazenamento</li>
+                        <li>Suporte Premium</li>
+                    </ul>
+                    <button
+                        class="w-full bg-red-700 text-white py-2 rounded-md hover:bg-red-800 transition duration-300">Contratar
+                        Agora</button>
+                </div>
+
+                <!-- Plano Avançado -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano Avançado</h3>
+                    <p class="text-lg text-gray-600 mb-6">Para grandes empresas e sites de alto tráfego.</p>
+                    <div class="text-3xl font-bold text-gray-800 mb-6">R$ 99,99/mês</div>
+                    <ul class="text-left text-gray-600 mb-6">
+                        <li>5 Domínios Inclusos</li>
+                        <li>100 GB de Armazenamento</li>
+                        <li>Suporte Prioritário 24/7</li>
+                    </ul>
+                    <button
+                        class="w-full bg-red-700 text-white py-2 rounded-md hover:bg-red-800 transition duration-300">Contratar
+                        Agora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto text-center px-6">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Benefícios da Hospedagem ZEINER</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/100" alt="Segurança" class="mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Segurança Total</h3>
+                    <p class="text-gray-600">Protegemos seus dados com criptografia e backups automáticos.</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/100" alt="Velocidade" class="mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Velocidade Imbatível</h3>
+                    <p class="text-gray-600">Servidores rápidos para que seu site carregue rapidamente.</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/100" alt="Suporte" class="mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Suporte 24/7</h3>
+                    <p class="text-gray-600">Nossa equipe está disponível a qualquer hora para lhe ajudar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center px-6">
+            <h2 class=" text-2xl font-semibold mb-6 text-gray-800">Perguntas Frequentes</h2>
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-6">
+                    <button
+                        class="w-full text-left py-4 px-6 bg-gray-200 hover:bg-gray-300 rounded-md text-lg font-semibold text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-color"
+                        id="faq1">
+                        O que é hospedagem de sites?
+                    </button>
+                    <div id="faq1-answer" class="hidden mt-4 text-gray-600 text-left">
+                        <p>A hospedagem de sites é um serviço que permite que você armazene seu site em servidores para
+                            que ele fique disponível na internet.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="mb-6">
+                    <button
+                        class="w-full text-left py-4 px-6 bg-gray-200 hover:bg-gray-300 rounded-md text-lg font-semibold text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-color"
+                        id="faq2">
+                        Como posso mudar meu plano de hospedagem?
+                    </button>
+                    <div id="faq2-answer" class="hidden mt-4 text-gray-600 text-left">
+                        <p>Você pode facilmente alterar seu plano diretamente na sua área de cliente, onde encontrará
+                            opções para upgrade ou downgrade.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="mb-6">
+                    <button
+                        class="w-full text-left py-4 px-6 bg-gray-200 hover:bg-gray-300 rounded-md text-lg font-semibold text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-color"
+                        id="faq3">
+                        Posso cancelar minha hospedagem a qualquer momento?
+                    </button>
+                    <div id="faq3-answer" class="hidden mt-4 text-gray-600 text-left">
+                        <p>Sim, você pode cancelar sua hospedagem a qualquer momento, e faremos o reembolso proporcional
+                            caso você já tenha pago por um período maior.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="mb-6">
+                    <button
+                        class="w-full text-left py-4 px-6 bg-gray-200 hover:bg-gray-300 rounded-md text-lg font-semibold text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-color"
+                        id="faq4">
+                        Como é o suporte ao cliente?
+                    </button>
+                    <div id="faq4-answer" class="hidden mt-4 text-gray-600 text-left">
+                        <p>Nosso suporte está disponível 24/7 através de chat, telefone e e-mail. Estamos aqui para
+                            resolver qualquer problema rapidamente!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-100 py-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:flex md:flex-col">
+            <!-- Serviços -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Serviços</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-primary-light-color">Hospedagem</a></li>
+                    <li><a href="#" class="hover:text-primary-light-color">Auditoria</a></li>
+                </ul>
+            </div>
+
+            <!-- Linha de Separação -->
+            <div class="col-span-2 border-t-2 border-gray-600 my-6"></div>
+
+            <!-- Copyright -->
+            <div class="text-sm text-center text-gray-400 md:text-right border-0">
+                <p class="text-center">Todos os direitos reservados™Copyright ZEINER© NIF: 5000965715</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS para menu mobile com animação -->
+     <script src="public/js/app.js"></script>
+
+</body>
+
+</html>
