@@ -48,3 +48,17 @@ menuBtn.addEventListener('click', () => {
         mobileMenu.classList.remove('animate-slideDown');
     }
 });
+
+// Filtro de categorias
+const categoriaSelect = document.getElementById('categoria');
+categoriaSelect.addEventListener('change', function () {
+    // Aqui você pode adicionar o código para filtrar os cursos com base na categoria selecionada.
+    console.log('Categoria selecionada: ', this.value);
+});
+
+// Busca por nome de curso
+const searchInput = document.getElementById('search');
+searchInput.addEventListener('input', function () {
+    // Aqui você pode adicionar o código para buscar os cursos conforme o texto digitado.
+    console.log('Buscando por: ', this.value);
+});

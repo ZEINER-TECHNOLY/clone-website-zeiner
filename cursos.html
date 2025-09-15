@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZEINER Plataforma</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('public/assets/img/bg1.jpg')] text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex justify-center items-center">
+                <img class="h-8 w-auto" src="public/assets/img/logo.png" alt="">
+                <div class="text-2xl font-bold text-primary-color">ZEINER</div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
+                <a href="#" class="hover:text-primary-color transition-all">Home</a>
+                <a href="#" class="hover:text-primary-color transition-all">Curso</a>
+                <a href="login.html" class="hover:text-primary-color transition-all">Login</a>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="md:hidden">
+                <button id="menu-btn"
+                    class="focus:outline-none transition-transform duration-300 transform flex flex-col items-center justify-center space-y-2 w-8 h-8">
+                    <div class="w-6 h-1 bg-gray-700 bar1"></div>
+                    <div class="w-6 h-1 bg-gray-700 bar2"></div>
+                    <div class="w-6 h-1 bg-gray-700 bar3"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu"
+            class="md:hidden hidden flex flex-col gap-2 px-6 pb-6 text-sm font-medium text-gray-700 transition-all duration-300 ease-in-out">
+            <a href="#" class="py-2 hover:text-primary-color transition-all">Home</a>
+            <a href="#" class="py-2 hover:text-primary-color transition-all">Curso</a>
+            <a href="login.html" class="py-2 hover:text-primary-color transition-all">Login</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="sm:min-h-full text-white py-16 md:py-10 bg-gradient-to-r from-blue-700/70 via-indigo-800 to-blue-900/70 relative overflow-hidden">
+        <div class="absolute inset-0 bg-opacity-50 bg-black"></div>
+        <div class="max-w-6xl mx-auto text-center px-6 relative z-10">
+            <h1
+                class="text-2xl font-extrabold mb-6 text-transparent bg-clip-text bg-white to-primary-light-color tracking-tight transition-all duration-300 ease-in-out">
+                Desfrute dos cursos na Plataforma ZEINER
+            </h1>
+            <p class="text-lg mb-10 text-gray-300 leading-relaxed">
+                Ispiramos Inovação e Promovemos a Igualdade.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filtro e Busca de Cursos -->
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-between items-center">
+            <!-- Filtro de Categoria -->
+            <div class="flex items-center space-x-4 w-full sm:w-auto mb-4 sm:mb-0">
+                <select id="categoria"
+                    class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full sm:w-64">
+                    <option value="">Selecione a Categoria</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="gestao">Gestão</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="saude">Saúde</option>
+                    <option value="educacao">Educação</option>
+                </select>
+            </div>
+
+            <!-- Barra de Busca -->
+            <div class="flex items-center w-full sm:w-auto">
+                <input type="text" id="search"
+                    class="p-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full sm:w-64"
+                    placeholder="Buscar por nome do curso">
+                <button
+                    class="p-3 bg-blue-700 text-white rounded-r-md hover:bg-blue-800 focus:outline-none transition duration-200">
+                    Buscar
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lista de Cursos -->
+    <section class="py-40 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Card de Curso -->
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out">
+                <img src="https://via.placeholder.com/400x200" alt="Curso 1"
+                    class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Curso de Desenvolvimento Web</h3>
+                <p class="text-gray-600 mb-4">Aprenda a criar sites e aplicações web do zero com este curso prático.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <a href="curso-details.html"
+                        class="text-blue-700 hover:text-blue-900 font-semibold transition duration-200">Ver mais</a>
+                    <button
+                        class="bg-red-700 text-white px-4 py-2 rounded-md hover:bg-red-800 transition duration-200">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Outro Card de Curso -->
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out">
+                <img src="https://via.placeholder.com/400x200" alt="Curso 2"
+                    class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Curso de Marketing Digital</h3>
+                <p class="text-gray-600 mb-4">Estratégias para aumentar sua presença digital e alcançar seu
+                    público-alvo.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <a href="curso-details.html"
+                        class="text-blue-700 hover:text-blue-900 font-semibold transition duration-200">Ver mais</a>
+                    <button
+                        class="bg-red-700 text-white px-4 py-2 rounded-md hover:bg-red-800 transition duration-200">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Outro Card de Curso -->
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out">
+                <img src="https://via.placeholder.com/400x200" alt="Curso 3"
+                    class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Curso de Gestão de Projetos</h3>
+                <p class="text-gray-600 mb-4">Aprenda a gerenciar projetos de forma eficaz com técnicas reconhecidas no
+                    mercado.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <a href="curso-details.html"
+                        class="text-blue-700 hover:text-blue-900 font-semibold transition duration-200">Ver mais</a>
+                    <button
+                        class="bg-red-700 text-white px-4 py-2 rounded-md hover:bg-red-800 transition duration-200">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Outro Card de Curso -->
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out">
+                <img src="https://via.placeholder.com/400x200" alt="Curso 4"
+                    class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Curso de Saúde Mental</h3>
+                <p class="text-gray-600 mb-4">Explore as práticas e técnicas para melhorar a saúde mental e emocional.
+                </p>
+                <div class="flex justify-between items-center mt-4">
+                    <a href="curso-details.html"
+                        class="text-blue-700 hover:text-blue-900 font-semibold transition duration-200">Ver mais</a>
+                    <button
+                        class="bg-red-700 text-white px-4 py-2 rounded-md hover:bg-red-800 transition duration-200">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-100 py-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:flex md:flex-col">
+            <!-- Serviços -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Serviços</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-primary-light-color">Hospedagem</a></li>
+                    <li><a href="#" class="hover:text-primary-light-color">Auditoria</a></li>
+                </ul>
+            </div>
+
+            <!-- Linha de Separação -->
+            <div class="col-span-2 border-t-2 border-gray-600 my-6"></div>
+
+            <!-- Copyright -->
+            <div class="text-sm text-center text-gray-400 md:text-right border-0">
+                <p class="text-center">Todos os direitos reservados™Copyright ZEINER© NIF: 5000965715</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS para menu mobile com animação -->
+    <script src="public/js/app.js"></script>
+
+</body>
+
+</html>
