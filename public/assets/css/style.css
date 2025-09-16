@@ -44,3 +44,31 @@
 .hamburger-open .bar3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/*teste de animação*/
+@keyframes esquerda {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.h1-esq{
+  animation: esquerda 1s ease-out;
+}
+@keyframes direita {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.h1-dir{
+  animation: direita 1s ease-out;
+}
