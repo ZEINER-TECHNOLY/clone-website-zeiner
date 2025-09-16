@@ -45,7 +45,7 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/*teste de animação*/
+/*minhas animações*/
 @keyframes esquerda {
   0% {
     transform: translateX(-100%);
@@ -71,4 +71,19 @@
 }
 .h1-dir{
   animation: direita 1s ease-out;
+}
+
+@keyframes visivel {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(100%);
+    opacity: 1;
+  }
+}
+
+.card-inf {
+  animation: visivel, 4s ease-in;
 }

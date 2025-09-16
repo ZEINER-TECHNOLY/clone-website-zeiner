@@ -9,31 +9,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[url('public/assets/img/bg1.jpg')] text-gray-900 font-sans">
+<body class="bg-[url('public/assets/img/bg2.jpg')] bg-cover text-gray-900 font-sans">
 
     <!-- Header -->
-    <header class="bg-white shadow-lg">
+    <header class="bg-black shadow-lg">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex justify-center items-center">
-                <img class="h-8 w-auto" src="public/assets/img/logo.png" alt="">
-                <div class="text-2xl font-bold text-primary-color">ZEINER</div>
-            </div>
+            <!-- Logo -->
+            <a href="index.html">
+                <div class="flex justify-center items-center cursor-pointer">
+                    <img class="h-8 w-auto" src="public/assets/img/logo.png" alt="">
+                    <div class="text-2xl font-bold text-red-700">ZEINER</div>
+                </div>
+            </a>
 
-            <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
                 <a href="index.html" class="hover:text-primary-color transition-all">Home</a>
-                <a href="cursos.html" class="hover:text-primary-color transition-all">Cursos</a>
-                <a href="hospedagem.html" class="hover:text-primary-color transition-all">Hospedagem</a>
-                <a href="auditoria.html" class="hover:text-primary-color transition-all">Auditoria</a>
+                <a href="cursos.html" class="hover:text-primary-color transition-all">Curso</a>
                 <a href="login.html" class="hover:text-primary-color transition-all">Login</a>
             </nav>
-            
-            <div class="md:hidden">
-                <button id="menu-btn" class="focus:outline-none transition-transform duration-300 transform flex flex-col items-center justify-center space-y-2 w-8 h-8">
-                    <div class="w-6 h-1 bg-gray-700 bar1"></div>
-                    <div class="w-6 h-1 bg-gray-700 bar2"></div>
-                    <div class="w-6 h-1 bg-gray-700 bar3"></div>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="md:hidden h-8 w-auto">
+                <button id="menu-btn"
+                    class="focus:outline-none transition-transform duration-300 transform flex flex-col items-center justify-center space-y-2 w-8 h-8">
+                    <div class="w-6 h-1 bg-white bar1"></div>
+                    <div class="w-6 h-1 bg-white bar2"></div>
+                    <div class="w-6 h-1 bg-white bar3"></div>
                 </button>
             </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu"
+            class="md:hidden hidden flex flex-col gap-2 px-6 pb-6 text-sm font-medium text-red-700 transition-all duration-300 ease-in-out">
+            <a href="index.html" class="py-2 hover:text-primary-color transition-all">Home</a>
+            <a href="cursos.html" class="py-2 hover:text-primary-color transition-all">Curso</a>
+            <a href="login.html" class="py-2 hover:text-primary-color transition-all">Login</a>
         </div>
     </header>
 
@@ -148,32 +160,31 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="max-w-7xl mx-auto text-center px-6">
-            <p class="text-lg font-medium">© 2025 ZEINER Plataforma. Todos os direitos reservados.</p>
-            <div class="flex justify-center space-x-6 mt-6">
-                <a href="https://www.facebook.com" class="text-white hover:text-red-700">Facebook</a>
-                <a href="https://www.twitter.com" class="text-white hover:text-red-700">Twitter</a>
-                <a href="https://www.linkedin.com" class="text-white hover:text-red-700">LinkedIn</a>
+<!-- Footer -->
+    <footer class="bg-gray-900 text-gray-100 py-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:flex md:flex-col">
+            <!-- Serviços -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Serviços</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-primary-light-color">Hospedagem</a></li>
+                    <li><a href="#" class="hover:text-primary-light-color">Auditoria</a></li>
+                </ul>
+            </div>
+
+            <!-- Linha de Separação -->
+            <div class="col-span-2 border-t-2 border-gray-600 my-6"></div>
+
+            <!-- Copyright -->
+            <div class="text-sm text-center text-gray-400 md:text-right border-0">
+                <p class="text-center">Todos os direitos reservados™Copyright ZEINER© NIF: 5000965715</p>
             </div>
         </div>
     </footer>
 
+
     <!-- Script para FAQ -->
-    <script>
-        document.querySelectorAll('.w-full').forEach(button => {
-            button.addEventListener('click', function() {
-                const answer = this.nextElementSibling;
-                if (answer.classList.contains('hidden')) {
-                    answer.classList.remove('hidden');
-                    answer.classList.add('block');
-                } else {
-                    answer.classList.remove('block');
-                    answer.classList.add('hidden');
-                }
-            });
-        });
+    <script src="public/js/app.js">
     </script>
 
 </body>

@@ -9,40 +9,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[url('public/assets/img/bg1.jpg')] text-gray-900 font-sans">
+<body class="bg-[url('public/assets/img/bg2.jpg')] bg-cover bg-no-repeat text-gray-900 font-sans">
 
     <!-- Header -->
-    <header class="bg-white shadow-lg">
+    <header class="bg-black shadow-lg">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Logo -->
             <a href="index.html">
                 <div class="flex justify-center items-center cursor-pointer">
                     <img class="h-8 w-auto" src="public/assets/img/logo.png" alt="">
-                    <div class="text-2xl font-bold text-primary-color">ZEINER</div>
+                    <div class="text-2xl font-bold text-red-700">ZEINER</div>
                 </div>
             </a>
 
             <!-- Desktop Menu -->
-            <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
                 <a href="index.html" class="hover:text-primary-color transition-all">Home</a>
                 <a href="cursos.html" class="hover:text-primary-color transition-all">Curso</a>
                 <a href="login.html" class="hover:text-primary-color transition-all">Login</a>
             </nav>
 
             <!-- Mobile Hamburger Button -->
-            <div class="md:hidden">
+            <div class="md:hidden h-8 w-auto">
                 <button id="menu-btn"
                     class="focus:outline-none transition-transform duration-300 transform flex flex-col items-center justify-center space-y-2 w-8 h-8">
-                    <div class="w-6 h-1 bg-gray-700 bar1"></div>
-                    <div class="w-6 h-1 bg-gray-700 bar2"></div>
-                    <div class="w-6 h-1 bg-gray-700 bar3"></div>
+                    <div class="w-6 h-1 bg-white bar1"></div>
+                    <div class="w-6 h-1 bg-white bar2"></div>
+                    <div class="w-6 h-1 bg-white bar3"></div>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu"
-            class="md:hidden hidden flex flex-col gap-2 px-6 pb-6 text-sm font-medium text-gray-700 transition-all duration-300 ease-in-out">
+            class="md:hidden hidden flex flex-col gap-2 px-6 pb-6 text-sm font-medium text-red-700 transition-all duration-300 ease-in-out">
             <a href="index.html" class="py-2 hover:text-primary-color transition-all">Home</a>
             <a href="cursos.html" class="py-2 hover:text-primary-color transition-all">Curso</a>
             <a href="login.html" class="py-2 hover:text-primary-color transition-all">Login</a>

@@ -75,3 +75,33 @@ document.querySelectorAll('button').forEach(button => {
     });
 });
 
+document.querySelectorAll('.w-full').forEach(button => {
+    button.addEventListener('click', function () {
+        const answer = this.nextElementSibling;
+        if (answer.classList.contains('hidden')) {
+            answer.classList.remove('hidden');
+            answer.classList.add('block');
+        } else {
+            answer.classList.remove('block');
+            answer.classList.add('hidden');
+        }
+    });
+});
+
+//
+const observar = new IntersectionObserver((events) => {
+    events.forEach(event => {
+        if (event.isIntersecting) {
+            event.target.classList.remove('opacity-0', 'translate-x-[-100%]')
+            event.target.classList.add('opacity-100', 'translate-x-0')
+        }
+    })
+}, { threshold: 0.5 })
+
+const teste = document.getElementById('card')
+console.log(teste)
+
+observar.observe(document.getElementById('card'))
+if (teste) {
+    observar.observe(teste);
+}
