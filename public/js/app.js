@@ -101,7 +101,13 @@ const observar = new IntersectionObserver((events) => {
 const teste = document.getElementById('card')
 console.log(teste)
 
-observar.observe(document.getElementById('card'))
+observar.observe(teste)
 if (teste) {
     observar.observe(teste);
 }
+
+const teste1 = document.getElementById('card')
+
+teste1.addEventListener('click', () => {
+    console.log("Estados Unidos de America")
+})

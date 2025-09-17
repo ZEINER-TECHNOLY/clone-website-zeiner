@@ -93,3 +93,6 @@
   mask-image: radial-gradient(black, transparent);
   border: 0px solid red;
 }
+#card{
+  border: 0px solid red;
+}
