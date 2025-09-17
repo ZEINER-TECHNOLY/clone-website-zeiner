@@ -87,3 +87,9 @@
 .card-inf {
   animation: visivel, 4s ease-in;
 }
+
+.sombra {
+  -webkit-mask-image: radial-gradient(rgb(146, 30, 30), transparent);
+  mask-image: radial-gradient(black, transparent);
+  border: 0px solid red;
+}
